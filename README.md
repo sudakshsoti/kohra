@@ -10,7 +10,7 @@ The surface ramp runs six steps from L 0.11 to 0.26, hue locked around 60 to 75 
 
 The chromatic identity is warm earth, not stylistic substitution. Where Tokyo Night runs cool blue-purple, Kohra runs amber, olive, terracotta, dusk-blue, and faded purple. Hues were picked for visual comfort over long reading sessions, not strict colour-wheel logic. There is no system accent, nothing shouts to remind you it is the brand colour.
 
-Two implementations track the same Figma source of truth: a VS Code theme at `themes/kohra-color-theme.json` and a Zed v0.2.0 theme at `themes/kohra.zed-theme.json`.
+Two implementations track the same Figma source of truth: a VS Code theme at `themes/kohra-color-theme.jsonc` and a Zed v0.2.0 theme at `themes/kohra.zed-theme.json`.
 
 ## Install
 

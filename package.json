@@ -16,7 +16,7 @@
             {
                 "label": "Kohra",
                 "uiTheme": "vs-dark",
-                "path": "./themes/kohra-color-theme.json"
+                "path": "./themes/kohra-color-theme.jsonc"
             }
         ]
     }
