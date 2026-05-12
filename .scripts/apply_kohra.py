@@ -58,8 +58,8 @@ M = {
     "668ac4": "4f7791",  # list highlight -> blue-muted
 
     # --- Accent palette ---
-    "7aa2f7": "598dae",  # blue, function, method, decorator, ansiBlue -> accent/blue
-    "698cd6": "598dae",  # bracket 1 -> accent/blue
+    "7aa2f7": "78accf",  # blue, function, method, decorator, ansiBlue -> accent/blue
+    "698cd6": "78accf",  # bracket 1 -> accent/blue
     "7dcfff": "6bb4aa",  # cyan-bright, interpolation, link active -> accent/cyan-bright
     "68b3de": "6bb4aa",  # bracket 2 -> accent/cyan-bright
     "2ac3de": "6bb4aa",  # semantic defaultLibrary -> accent/cyan-bright
@@ -69,24 +69,24 @@ M = {
     "0db9d7": "4c958c",  # html entity, info-token, json key, support -> accent/cyan
     "1abc9c": "2a99d4",  # info ruler -> diag/info
     "0da0ba": "2a99d4",  # info/hint icons, notif info -> diag/info
-    "bb9af7": "897daf",  # purple keyword variable-decl -> accent/purple
-    "9a7ecc": "897daf",  # bracket 3 -> accent/purple
-    "b267e6": "897daf",  # token debug -> accent/purple
+    "bb9af7": "a89ccf",  # purple keyword variable-decl -> accent/purple
+    "9a7ecc": "a89ccf",  # bracket 3 -> accent/purple
+    "b267e6": "a89ccf",  # token debug -> accent/purple
     "9d7cd8": "746b91",  # purple-dark, storage-mod, charts purple -> accent/purple-dark
-    "9ece6a": "7f8e5a",  # string, ansi green, debug string -> accent/green
-    "80a856": "7f8e5a",  # bracket 5 -> accent/green
-    "e0af68": "a27f52",  # yellow params globals warning -> accent/yellow
-    "e2bd3a": "a27f52",  # stack frame highlight base -> accent/yellow
-    "ff9e64": "ab795c",  # orange numbers scmGraph -> accent/orange
+    "9ece6a": "9cad77",  # string, ansi green, debug string -> accent/green
+    "80a856": "9cad77",  # bracket 5 -> accent/green
+    "e0af68": "c29e70",  # yellow params globals warning -> accent/yellow
+    "e2bd3a": "c29e70",  # stack frame highlight base -> accent/yellow
+    "ff9e64": "cc977b",  # orange numbers scmGraph -> accent/orange
     "c49a5a": "bf801e",  # list/debug warning -> diag/warning
     "bba461": "bf801e",  # notification warning icon -> diag/warning
     "ffdb69": "bf801e",  # token warn -> diag/warning
-    "c97018": "ab795c",  # list invalid -> accent/orange
+    "c97018": "cc977b",  # list invalid -> accent/orange
 
     # --- Reds / errors ---
-    "f7768e": "af7474",  # red/pink, language var, ansi red, tag, spread -> accent/red
-    "fc7b7b": "af7474",  # CSS ID -> accent/red
-    "de5971": "af7474",  # custom tag -> accent/red
+    "f7768e": "d09292",  # red/pink, language var, ansi red, tag, spread -> accent/red
+    "fc7b7b": "d09292",  # CSS ID -> accent/red
+    "de5971": "d09292",  # custom tag -> accent/red
     "ba3c97": "a57495",  # tag punctuation -> accent/magenta
     "ff5370": "af7473",  # invalid -> accent/red-error
     "db4b4b": "d36c6d",  # error -> diag/error
@@ -118,7 +118,7 @@ M = {
     "6d91de": "4f7791",  # heading 4 -> blue-muted
 
     # --- Stragglers ---
-    "c2985b": "a27f52",  # inputValidation warning bg -> accent/yellow
+    "c2985b": "c29e70",  # inputValidation warning bg -> accent/yellow
     "2b2b3b": "272320",  # tree indent guides -> bg-elevated
     "007a75": "172614",  # merge current content bg base -> vcs/added-bg
 }
