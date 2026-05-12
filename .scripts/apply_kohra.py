@@ -131,7 +131,7 @@ PRESERVE = {"ffffff", "000000"}
 HEX_RE = re.compile(r"#([0-9a-fA-F]{6})([0-9a-fA-F]{2})?\b")
 
 def main():
-    target = Path("/Users/sudakshsoti/dev/kohra/themes/kohra-color-theme.json")
+    target = Path("/Users/sudakshsoti/dev/kohra/themes/kohra-color-theme.jsonc")
     text = target.read_text()
 
     unmapped = {}

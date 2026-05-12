@@ -47,7 +47,7 @@ When extending or rebalancing the palette, classify the new token first, then co
 ## Repo layout
 
 ```
-themes/kohra-color-theme.json   VS Code theme (JSONC; trailing commas stripped)
+themes/kohra-color-theme.jsonc  VS Code theme (JSONC; trailing commas stripped)
 themes/kohra.zed-theme.json     Zed theme (v0.2.0 schema)
 .scripts/apply_kohra.py         TN→Kohra hex substitution; idempotent
 package.json                    VS Code extension manifest
@@ -57,7 +57,7 @@ There is no `reference/`, `token-map.csv`, or `tokens.json` in this repo — tho
 
 ## Working with the JSONs
 
-- `themes/kohra-color-theme.json` is JSONC. VS Code's loader accepts comments. Trailing commas have been stripped to satisfy strict linters — keep it that way; if you add a property at the end of an object, do not introduce a trailing comma.
+- `themes/kohra-color-theme.jsonc` is JSONC. VS Code's loader accepts comments. Trailing commas have been stripped to satisfy strict linters — keep it that way; if you add a property at the end of an object, do not introduce a trailing comma.
 - `themes/kohra.zed-theme.json` is strict JSON (Zed enforces it).
 - `.scripts/apply_kohra.py` holds the Tokyo Night → Kohra hex map and applies it to the VS Code theme. Re-run after any palette change in the Kohra Figma collection: `python3 .scripts/apply_kohra.py`. The script reports unmapped hexes — add them to the `M` dict and re-run.
 
