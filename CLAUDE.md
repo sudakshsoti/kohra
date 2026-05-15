@@ -10,7 +10,7 @@ Scaffolded from Tokyo Night by Enkia (MIT) — scope coverage and the VS Code ex
 
 ## Design intent
 
-Warm-grey monochrome surface with a small set of deliberate syntax colours. Goal is "pleasant over long sessions," not philosophical coherence. No system accent. Comments are the lowest-luminance syntax token.
+Cool fog-grey monochrome surface with a small set of deliberate syntax colours. The neutral ramp is achromatic with a very slight blue tint (OKLCH H ≈ 240°, C ≈ 0.005) — no warmth. Evokes a winter morning under fog: still, cold, desaturated. Goal is "pleasant over long sessions," not philosophical coherence. No system accent. Comments are the lowest-luminance syntax token.
 
 ## Source of truth: Figma → JSON
 
@@ -26,7 +26,7 @@ Every Kohra variable belongs to one bucket. Within a bucket, lightness (L) and c
 
 | Bucket | Tokens | L | C |
 |---|---|---|---|
-| neutral ramps | `neutral/bg-*`, `neutral/fg-*`, `term/black\|white\|bright-*` | preserved per step | 0.008 |
+| neutral ramps | `neutral/bg-*`, `neutral/fg-*`, `term/black\|white\|bright-*` | preserved per step | 0.007 @ H≈240° |
 | syntax-muted | `syntax/comment*` | preserved per step | 0.025 |
 | syntax-neutral | `syntax/variable`, `class` | 0.78 | 0.012 |
 | syntax-faint | `syntax/operator`, `escape` | 0.56 | 0.012 |
