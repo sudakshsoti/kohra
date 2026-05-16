@@ -72,11 +72,13 @@ There is no `reference/`, `token-map.csv`, or `tokens.json` in this repo — tho
 ## Testing locally
 
 VS Code / Cursor:
+
 - Symlink or copy this folder into `~/.vscode/extensions/` (or `~/.cursor/extensions/` for Cursor).
 - Reload window: `Cmd+Shift+P → Developer: Reload Window`.
 - Switch theme: `Cmd+K Cmd+T → Kohra`.
 
 Zed:
+
 - Symlink `themes/kohra.zed-theme.json` into `~/.config/zed/themes/` (e.g. `ln -sf $(pwd)/themes/kohra.zed-theme.json ~/.config/zed/themes/kohra.json`).
 - Zed hot-reloads themes; pick **Kohra** from the theme picker.
 

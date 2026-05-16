@@ -7,7 +7,7 @@ The JSON themes were bumped from L 0.62 → L 0.72 in commit `68d3f59`, but the 
 Variables to update in the `Kohra` collection (Dark mode), all at **L 0.72, C 0.075**, hue preserved:
 
 | Variable (hue) | Old hex | New hex |
-|---|---|---|
+| --- | --- | --- |
 | purple — h ≈ 295° | `#897daf` | `#a89ccf` |
 | red — h ≈ 19° | `#af7474` | `#d09292` |
 | orange-yellow — h ≈ 72° | `#a27f52` | `#c29e70` |
