@@ -10,11 +10,13 @@ The surface ramp runs six steps from L 0.11 to 0.26, hue locked around 60 to 75 
 
 The chromatic identity is warm earth, not stylistic substitution. Where Tokyo Night runs cool blue-purple, Kohra runs amber, olive, terracotta, dusk-blue, and faded purple. Hues were picked for visual comfort over long reading sessions, not strict colour-wheel logic. There is no system accent, nothing shouts to remind you it is the brand colour.
 
-Two implementations track the same Figma source of truth: a VS Code theme at `themes/kohra-color-theme.jsonc` and a Zed v0.2.0 theme at `themes/kohra.zed-theme.json`.
+Three implementations track the same Figma source of truth: a VS Code theme at `themes/kohra-color-theme.json`, a Cursor-targeted parallel at `themes/kohra-cursor-color-theme.json` (currently byte-identical; carved out so Cursor-specific surfaces can diverge), and a Zed v0.2.0 theme at `themes/kohra.zed-theme.json`.
 
 ## Install
 
-VS Code or Cursor: symlink the repo into `~/.vscode/extensions/` or `~/.cursor/extensions/`, reload the window, switch theme via Cmd+K Cmd+T.
+VS Code: symlink the repo into `~/.vscode/extensions/`, reload the window, switch theme via Cmd+K Cmd+T, pick **Kohra**.
+
+Cursor: symlink the repo into `~/.cursor/extensions/`, reload the window, pick **Kohra (Cursor)**. Cursor is a VS Code fork and reads the same manifest, so the plain **Kohra** label also works — the Cursor-labelled variant exists so the file can drift independently if Cursor-specific tokens (ghost text, inline AI diff, composer chrome) need separate tuning.
 
 Zed: symlink `themes/kohra.zed-theme.json` into `~/.config/zed/themes/`, then pick Kohra from the theme picker.
 

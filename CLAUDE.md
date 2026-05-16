@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Kohra
 
-Personal dark colour theme. Single variant, not for marketplace distribution. Targets VS Code (primary), Zed (parallel port), and eventually Sublime Text and Ghostty.
+Personal dark colour theme. Single variant, not for marketplace distribution. Targets VS Code (primary), Cursor (parallel theme file in the same extension manifest — Cursor is a VS Code fork and reads the manifest natively), Zed (parallel port), and eventually Sublime Text and Ghostty.
 
 Scaffolded from Tokyo Night by Enkia (MIT) — scope coverage and the VS Code extension manifest are inherited. All colour values have been replaced.
 
@@ -47,17 +47,18 @@ When extending or rebalancing the palette, classify the new token first, then co
 ## Repo layout
 
 ```
-themes/kohra-color-theme.jsonc  VS Code theme (JSONC; trailing commas stripped)
-themes/kohra.zed-theme.json     Zed theme (v0.2.0 schema)
-.scripts/apply_kohra.py         TN→Kohra hex substitution; idempotent
-package.json                    VS Code extension manifest
+themes/kohra-color-theme.json         VS Code theme (JSONC; trailing commas stripped)
+themes/kohra-cursor-color-theme.json  Cursor theme — parallel target, byte-identical to the VS Code file today; carved out so Cursor-specific surfaces (ghost text, inline AI diff, composer chrome) can diverge without touching the VS Code variant
+themes/kohra.zed-theme.json            Zed theme (v0.2.0 schema)
+.scripts/apply_kohra.py                TN→Kohra hex substitution; idempotent; rewrites both JSONC files in one pass
+package.json                           VS Code / Cursor extension manifest — registers both themes under labels "Kohra" and "Kohra (Cursor)"
 ```
 
 There is no `reference/`, `token-map.csv`, or `tokens.json` in this repo — those were planned scaffolding from Tokyo Night that didn't survive the rewrite. Don't recreate them unless asked.
 
 ## Working with the JSONs
 
-- `themes/kohra-color-theme.jsonc` is JSONC. VS Code's loader accepts comments. Trailing commas have been stripped to satisfy strict linters — keep it that way; if you add a property at the end of an object, do not introduce a trailing comma.
+- `themes/kohra-color-theme.json` is JSONC. VS Code's loader accepts comments. Trailing commas have been stripped to satisfy strict linters — keep it that way; if you add a property at the end of an object, do not introduce a trailing comma.
 - `themes/kohra.zed-theme.json` is strict JSON (Zed enforces it).
 - `.scripts/apply_kohra.py` holds the Tokyo Night → Kohra hex map and applies it to the VS Code theme. Re-run after any palette change in the Kohra Figma collection: `python3 .scripts/apply_kohra.py`. The script reports unmapped hexes — add them to the `M` dict and re-run.
 

@@ -131,8 +131,10 @@ PRESERVE = {"ffffff", "000000"}
 HEX_RE = re.compile(r"#([0-9a-fA-F]{6})([0-9a-fA-F]{2})?\b")
 
 def main():
-    target = Path("/Users/sudakshsoti/dev/kohra/themes/kohra-color-theme.jsonc")
-    text = target.read_text()
+    targets = [
+        Path("/Users/sudakshsoti/dev/kohra/themes/kohra-color-theme.json"),
+        Path("/Users/sudakshsoti/dev/kohra/themes/kohra-cursor-color-theme.json"),
+    ]
 
     unmapped = {}
     counts = {}
@@ -148,11 +150,13 @@ def main():
         unmapped[base] = unmapped.get(base, 0) + 1
         return m.group(0)
 
-    new_text = HEX_RE.sub(repl, text)
+    for target in targets:
+        text = target.read_text()
+        new_text = HEX_RE.sub(repl, text)
+        target.write_text(new_text)
+        print(f"Wrote {target.name}")
 
-    target.write_text(new_text)
-
-    print(f"Replaced {sum(counts.values())} hex codes across {len(counts)} unique colours.")
+    print(f"\nReplaced {sum(counts.values())} hex codes across {len(counts)} unique colours.")
     if unmapped:
         print("\nUNMAPPED hexes still in file:")
         for h, n in sorted(unmapped.items(), key=lambda x: -x[1]):

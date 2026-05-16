@@ -16,7 +16,12 @@
             {
                 "label": "Kohra",
                 "uiTheme": "vs-dark",
-                "path": "./themes/kohra-color-theme.jsonc"
+                "path": "./themes/kohra-color-theme.json"
+            },
+            {
+                "label": "Kohra (Cursor)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/kohra-cursor-color-theme.json"
             }
         ]
     }
