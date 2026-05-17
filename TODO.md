@@ -25,6 +25,7 @@ L 0.72 is the conservative jump that gets WCAG to ~7.5:1 and APCA to body-readin
 - **L 0.78** — would essentially merge syntax-primary into the neutral-fg luminance band. Probably too bright; syntax would lose its visual subordination to identifiers.
 
 Things to look for during testing:
+
 - Does purple still feel like the dim one next to teal property keys?
 - Does the orange numerics token (`#cc977b`) overpower string green / blue function names? If yes, the bucket lift worked but warm hues now dominate — consider rebalancing chroma down to 0.06 instead of raising L.
 - Long-session fatigue: is the editor *too bright* now? Warm-grey background is forgiving but L 0.72 across six tokens is a meaningful aggregate increase in screen luminance.
