@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Kohra
 
-Personal dark colour theme. Single variant, not for marketplace distribution. Targets VS Code (primary), Cursor (parallel theme file in the same extension manifest — Cursor is a VS Code fork and reads the manifest natively), Zed (parallel port), and eventually Sublime Text and Ghostty.
+Personal dark colour theme. Single variant, not for marketplace distribution. Targets VS Code (primary), Cursor (parallel theme file in the same extension manifest — Cursor is a VS Code fork and reads the manifest natively), Zed (parallel port), Ghostty (terminal port), and eventually Sublime Text.
 
 Scaffolded from Tokyo Night by Enkia (MIT) — scope coverage and the VS Code extension manifest are inherited. All colour values have been replaced.
 
@@ -50,6 +50,7 @@ When extending or rebalancing the palette, classify the new token first, then co
 themes/kohra-color-theme.json         VS Code theme (JSONC; trailing commas stripped)
 themes/kohra-cursor-color-theme.json  Cursor theme — parallel target, byte-identical to the VS Code file today; carved out so Cursor-specific surfaces (ghost text, inline AI diff, composer chrome) can diverge without touching the VS Code variant
 themes/kohra.zed-theme.json            Zed theme (v0.2.0 schema)
+themes/kohra-ghostty                   Ghostty terminal theme (flat key=value config; 16-colour ANSI palette + bg/fg/cursor/selection). Derived from the Zed terminal palette
 .scripts/apply_kohra.py                TN→Kohra hex substitution; idempotent; rewrites both JSONC files in one pass
 package.json                           VS Code / Cursor extension manifest — registers both themes under labels "Kohra" and "Kohra (Cursor)"
 ```
@@ -81,6 +82,11 @@ Zed:
 
 - Symlink `themes/kohra.zed-theme.json` into `~/.config/zed/themes/` (e.g. `ln -sf $(pwd)/themes/kohra.zed-theme.json ~/.config/zed/themes/kohra.json`).
 - Zed hot-reloads themes; pick **Kohra** from the theme picker.
+
+Ghostty:
+
+- Symlink `themes/kohra-ghostty` into `~/.config/ghostty/themes/` (e.g. `ln -sf $(pwd)/themes/kohra-ghostty ~/.config/ghostty/themes/kohra-ghostty`).
+- Set `theme = kohra-ghostty` in `~/.config/ghostty/config`, then reload (`Cmd+Shift+,`).
 
 ## Implementation priority
 
