@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Kohra
 
-Personal dark colour theme. Single variant, not for marketplace distribution. Targets VS Code (primary), Cursor (parallel theme file in the same extension manifest — Cursor is a VS Code fork and reads the manifest natively), Zed (parallel port), Ghostty (terminal port), and eventually Sublime Text.
+Personal dark colour theme. Single variant, not for marketplace distribution. Targets VS Code (primary), Cursor (parallel theme file in the same extension manifest — Cursor is a VS Code fork and reads the manifest natively), Zed (parallel port), Ghostty (terminal port), and Sublime Text (parallel port).
 
-Scaffolded from Tokyo Night by Enkia (MIT) — scope coverage and the VS Code extension manifest are inherited. All colour values have been replaced.
+Scaffolded from Tokyo Night by Enkia (MIT) — VS Code scope coverage and the extension manifest are inherited. The Sublime Text `.sublime-theme` (chrome — tabs, sidebar, status bar, popups) is scaffolded separately from ayu-mirage by Ike Ku (MIT) and uses ayu's PNG icon assets verbatim. All colour values have been replaced. See `NOTICE` for license texts.
 
 ## Design intent
 
@@ -51,8 +51,13 @@ themes/kohra-color-theme.json         VS Code theme (JSONC; trailing commas stri
 themes/kohra-cursor-color-theme.json  Cursor theme — parallel target, byte-identical to the VS Code file today; carved out so Cursor-specific surfaces (ghost text, inline AI diff, composer chrome) can diverge without touching the VS Code variant
 themes/kohra.zed-theme.json            Zed theme (v0.2.0 schema)
 themes/kohra-ghostty                   Ghostty terminal theme (flat key=value config; 16-colour ANSI palette + bg/fg/cursor/selection). Derived from the Zed terminal palette
-.scripts/apply_kohra.py                TN→Kohra hex substitution; idempotent; rewrites both JSONC files in one pass
+themes/kohra.sublime-color-scheme      Sublime Text colour scheme (relaxed JSON; // comments + trailing commas allowed). variables → globals (editor UI) → rules (scope-based syntax). Hexes mirror the VS Code / Zed palette
+themes/kohra.sublime-theme             Sublime Text UI theme (chrome — tabs, sidebar, status bar, popups). Scaffolded from ayu-mirage; references PNG icons under kohra-assets/. Texture paths resolve via the `Packages/Kohra/` install symlink
+themes/kohra-assets/                   PNG icon set used by kohra.sublime-theme (arrows, close glyph, dirty dot, folder, fold). Lifted verbatim from ayu (MIT, see NOTICE)
+.scripts/apply_kohra.py                TN→Kohra hex substitution for the VS Code / Cursor JSONC themes; idempotent
+.scripts/apply_kohra_theme.py          ayu-mirage→Kohra hex substitution for kohra.sublime-theme; idempotent
 package.json                           VS Code / Cursor extension manifest — registers both themes under labels "Kohra" and "Kohra (Cursor)"
+NOTICE                                 MIT attribution for Tokyo Night (VS Code scope coverage) and ayu (Sublime theme chrome + icon assets)
 ```
 
 There is no `reference/`, `token-map.csv`, or `tokens.json` in this repo — those were planned scaffolding from Tokyo Night that didn't survive the rewrite. Don't recreate them unless asked.
@@ -87,6 +92,13 @@ Ghostty:
 
 - Symlink `themes/kohra-ghostty` into `~/.config/ghostty/themes/` (e.g. `ln -sf $(pwd)/themes/kohra-ghostty ~/.config/ghostty/themes/kohra-ghostty`).
 - Set `theme = kohra-ghostty` in `~/.config/ghostty/config`, then reload (`Cmd+Shift+,`).
+
+Sublime Text:
+
+- Symlink the entire `themes/` folder as a Sublime package (texture paths in the theme reference `Kohra/kohra-assets/…`, so the folder must mount at `Packages/Kohra/`):
+  `ln -sf $(pwd)/themes ~/Library/Application\ Support/Sublime\ Text/Packages/Kohra`
+- Pick the colour scheme: `Cmd+Shift+P → UI: Select Color Scheme → Kohra`.
+- Pick the chrome theme: `Cmd+Shift+P → UI: Select Theme → Kohra` (both hot-reload on save).
 
 ## Implementation priority
 
