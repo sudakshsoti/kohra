@@ -231,7 +231,7 @@
     "editorSuggestWidget.selectedBackground": "#212527",
     "editorSuggestWidget.highlightForeground": "#4f7791",
 
-    "editorCodeLens.foreground": "#605749",
+    "editorCodeLens.foreground": "#4c5b65",
     "editorLightBulb.foreground": "#c29e70",
     "editorLightBulbAutoFix.foreground": "#c29e70",
 
@@ -496,7 +496,7 @@
         "string.quoted.docstring.multi.python constant.character.escape"
       ],
       "settings": {
-        "foreground": "#605749"
+        "foreground": "#4c5b65"
       }
     },
     {
@@ -517,7 +517,7 @@
         "log.date"
       ],
       "settings": {
-        "foreground": "#716859"
+        "foreground": "#5c6c77"
       }
     },
     {
@@ -1396,7 +1396,7 @@
       "name": "Markdown - Markup Raw Inline Punctuation",
       "scope": "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
       "settings": {
-        "foreground": "#716859"
+        "foreground": "#5c6c77"
       }
     },
     {
@@ -1503,7 +1503,7 @@
       "name": "Markdown - Blockquote",
       "scope": "markup.quote punctuation.definition.blockquote.markdown",
       "settings": {
-        "foreground": "#716859"
+        "foreground": "#5c6c77"
       }
     },
     {
@@ -1541,7 +1541,7 @@
       "scope": "meta.separator",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#605749"
+        "foreground": "#4c5b65"
       }
     },
     {

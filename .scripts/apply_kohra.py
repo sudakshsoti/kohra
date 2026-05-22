@@ -47,9 +47,9 @@ M = {
     "42465d": "3f4245",  # panelTitle inactive, bracketMatch border -> fg-ghost
     "363b54": "3f4245",  # linenumber, indent guide, whitespace -> fg-ghost
     "414761": "3f4245",  # breakpoint disabled -> fg-ghost
-    "51597d": "605749",  # codeLens, comment, separator -> syntax/comment
-    "4e5579": "716859",  # blockquote, raw inline punct -> syntax/comment-doc
-    "5a638c": "716859",  # comment doc -> syntax/comment-doc
+    "51597d": "4c5b65",  # codeLens, comment, separator -> syntax/comment
+    "4e5579": "5c6c77",  # blockquote, raw inline punct -> syntax/comment-doc
+    "5a638c": "5c6c77",  # comment doc -> syntax/comment-doc
 
     # --- Brand blues ---
     "3d59a1": "085b87",  # button bg, focus, find match -> brand/blue

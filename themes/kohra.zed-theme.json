@@ -60,7 +60,7 @@
         "editor.subheader.background": "#181b1dff",
         "editor.active_line.background": "#181b1dbf",
         "editor.highlighted_line.background": "#181b1dff",
-        "editor.line_number": "#605749",
+        "editor.line_number": "#4c5b65",
         "editor.active_line_number": "#babec1",
         "editor.hover_line_number": "#828689",
         "editor.invisible": "#5a5e60ff",
@@ -200,12 +200,12 @@
             "font_weight": null
           },
           "comment": {
-            "color": "#605749ff",
+            "color": "#4c5b65ff",
             "font_style": "italic",
             "font_weight": null
           },
           "comment.doc": {
-            "color": "#716859ff",
+            "color": "#5c6c77ff",
             "font_style": null,
             "font_weight": null
           },

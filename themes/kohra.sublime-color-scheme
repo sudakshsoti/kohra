@@ -26,8 +26,8 @@
         "fg_bright": "#d3d8da",
 
         // syntax-muted — lowest-luminance tokens
-        "comment": "#605749",
-        "comment_doc": "#716859",
+        "comment": "#4c5b65",
+        "comment_doc": "#5c6c77",
         "operator": "#79736d",
 
         // syntax-primary / accents
