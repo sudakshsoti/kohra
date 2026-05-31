@@ -2,6 +2,12 @@
 
 A personal cool fog-grey monochrome dark theme. Single variant, not packaged for distribution. The name is Hindi for fog, which is the surface.
 
+<p align="center">
+  <img src="assets/kohra-zed.png" width="880" alt="The Kohra theme running in Zed: cool fog-grey editor chrome with sample/showcase.ts open. Comments recede into the surface; types, strings and numbers carry just enough muted blue, green and amber to separate without shouting." />
+  <br />
+  <sub>Kohra in Zed — <code>sample/showcase.ts</code></sub>
+</p>
+
 ## Concept
 
 Every token in Kohra belongs to a bucket. Inside each bucket, lightness and chroma are locked in OKLCH; only hue varies. Keywords don’t shout over types, strings don’t dominate functions, comments recede uniformly. Tokens of the same role read as siblings because they are siblings in perceptual coordinates. Diagnostics break the rule on purpose — they have to interrupt.
