@@ -1,0 +1,224 @@
+{
+  "$schema": "https://raw.githubusercontent.com/manaflow-ai/cmux/main/web/data/cmux.schema.json",
+  "schemaVersion": 1,
+
+  // Kohra — cmux port.
+  // Cool fog-grey monochrome. Colours mirror the Kohra terminal palette (themes/kohra-ghostty).
+  // This file keeps the full cmux template scaffold: only the colour-relevant keys are set
+  // (app.appearance, workspaceColors, sidebarAppearance, browser.theme); every other section is
+  // left commented so it falls back to the value saved in cmux Settings. Uncomment + edit any
+  // line to take it over.
+  // Install: cp themes/kohra-cmux.json ~/.config/cmux/cmux.json
+
+  "app" : {
+    "appearance" : "dark"
+    // Remaining app.* keys fall back to Settings. Uncomment to manage:
+    //   "reorderOnNotification" : true,
+    //   "warnBeforeClosingTabXButton" : false,
+    //   "iMessageMode" : false,
+    //   "menuBarOnly" : false,
+    //   "workspaceInheritWorkingDirectory" : true,
+    //   "warnBeforeClosingTab" : true,
+    //   "keepWorkspaceOpenWhenClosingLastSurface" : false,
+    //   "sendAnonymousTelemetry" : true,
+    //   "minimalMode" : false,
+    //   "focusPaneOnFirstClick" : false,
+    //   "openMarkdownInCmuxViewer" : false,
+    //   "newWorkspacePlacement" : "afterCurrent",
+    //   "commandPaletteSearchesAllSurfaces" : false,
+    //   "language" : "system",
+    //   "appIcon" : "automatic",
+    //   "openSupportedFilesInCmux" : true,
+    //   "hideTabCloseButton" : false,
+    //   "confirmQuit" : "always",
+    //   "renameSelectsExistingName" : true,
+    //   "preferredEditor" : ""
+  },
+
+  //   "terminal" : {
+  //     "showScrollBar" : true,
+  //     "autoResumeAgentSessions" : true,
+  //     "resumeCommands" : [
+  //
+  //     ],
+  //     "textBoxMaxLines" : 10,
+  //     "copyOnSelect" : false
+  //   },
+
+  //   "notifications" : {
+  //     "paneFlash" : true,
+  //     "sound" : "default",
+  //     "hooksMode" : "append",
+  //     "customSoundFilePath" : "",
+  //     "command" : "",
+  //     "unreadPaneRing" : true,
+  //     "showInMenuBar" : true,
+  //     "hooks" : [
+  //
+  //     ],
+  //     "dockBadge" : true
+  //   },
+
+  //   "sidebar" : {
+  //     "showCustomMetadata" : true,
+  //     "openPortLinksInCmuxBrowser" : true,
+  //     "showNotificationMessage" : true,
+  //     "showPullRequests" : true,
+  //     "openPullRequestLinksInCmuxBrowser" : true,
+  //     "branchLayout" : "vertical",
+  //     "showBranchDirectory" : true,
+  //     "showPorts" : true,
+  //     "watchGitStatus" : true,
+  //     "showWorkspaceDescription" : true,
+  //     "showProgress" : true,
+  //     "showLog" : true,
+  //     "showSSH" : true,
+  //     "hideAllDetails" : false,
+  //     "makePullRequestsClickable" : true
+  //   },
+
+  // Workspace rail chips, mapped to Kohra. 12 are taken straight from the Kohra ANSI palette;
+  // Navy, Crimson, Orange and Indigo are derived in OKLCH at L/C matched to the palette normals
+  // (L≈0.60, C≈0.10) so they read as siblings rather than imports.
+  "workspaceColors" : {
+    "indicatorStyle" : "leftRail",
+    "colors" : {
+      "Blue" : "#3e88b5",
+      "Aqua" : "#65c1b5",
+      "Teal" : "#1c9388",
+      "Olive" : "#768a42",
+      "Amber" : "#d2a56d",
+      "Red" : "#b46768",
+      "Crimson" : "#814346",
+      "Green" : "#a4b776",
+      "Navy" : "#395a81",
+      "Purple" : "#a86893",
+      "Brown" : "#a57635",
+      "Orange" : "#ae7853",
+      "Charcoal" : "#4a4d50",
+      "Magenta" : "#d598c0",
+      "Indigo" : "#646295",
+      "Rose" : "#e19796"
+    },
+    "selectionColor" : "#3e88b5",
+    "notificationBadgeColor" : "#b46768"
+  },
+
+  "sidebarAppearance" : {
+    "tintColor" : "#181b1d",
+    "lightModeTintColor" : null,
+    "darkModeTintColor" : "#181b1d",
+    "tintOpacity" : 0.2,
+    "matchTerminalBackground" : false
+  },
+
+  //   "automation" : {
+  //     "claudeCodeIntegration" : true,
+  //     "geminiIntegration" : true,
+  //     "claudeBinaryPath" : "",
+  //     "cursorIntegration" : true,
+  //     "socketControlMode" : "cmuxOnly",
+  //     "portRange" : 10,
+  //     "portBase" : 9100,
+  //     "ripgrepBinaryPath" : "",
+  //     "socketPassword" : "",
+  //     "suppressSubagentNotifications" : true
+  //   },
+
+  "browser" : {
+    "theme" : "dark"
+    // Remaining browser.* keys fall back to Settings. Uncomment to manage:
+    //   "discardHiddenWebViews" : true,
+    //   "hostsToOpenInEmbeddedBrowser" : [],
+    //   "defaultSearchEngine" : "google",
+    //   "urlsToAlwaysOpenExternally" : [],
+    //   "insecureHttpHostsAllowedInEmbeddedBrowser" : [
+    //     "localhost",
+    //     "*.localhost",
+    //     "127.0.0.1",
+    //     "::1",
+    //     "0.0.0.0",
+    //     "*.localtest.me"
+    //   ],
+    //   "showImportHintOnBlankTabs" : true,
+    //   "hiddenWebViewDiscardDelaySeconds" : 300,
+    //   "reactGrabVersion" : "0.1.29",
+    //   "interceptTerminalOpenCommandInCmuxBrowser" : true,
+    //   "openTerminalLinksInCmuxBrowser" : true,
+    //   "showSearchSuggestions" : true
+  }
+
+  //   "shortcuts" : {
+  //     "bindings" : {
+  //       "saveFilePreview" : "cmd+s",
+  //       "focusDown" : "cmd+opt+↓",
+  //       "browserZoomOut" : "cmd+-",
+  //       "showHideAllWindows" : "cmd+opt+ctrl+.",
+  //       "attachTextBoxFile" : "cmd+shift+opt+a",
+  //       "useSelectionForFind" : "cmd+e",
+  //       "globalSearch" : "cmd+opt+f",
+  //       "nextSidebarTab" : "cmd+ctrl+]",
+  //       "browserReload" : "cmd+r",
+  //       "newSurface" : "cmd+t",
+  //       "browserZoomIn" : "cmd+=",
+  //       "equalizeSplits" : "cmd+ctrl+=",
+  //       "reloadConfiguration" : "cmd+shift+,",
+  //       "focusUp" : "cmd+opt+↑",
+  //       "browserForward" : "cmd+]",
+  //       "findNext" : "cmd+g",
+  //       "toggleUnread" : "cmd+opt+u",
+  //       "closeTab" : "cmd+w",
+  //       "findInDirectory" : "cmd+shift+f",
+  //       "commandPalettePrevious" : "ctrl+p",
+  //       "triggerFlash" : "cmd+shift+h",
+  //       "toggleFullScreen" : "cmd+ctrl+f",
+  //       "findPrevious" : "cmd+opt+g",
+  //       "renameWorkspace" : "cmd+shift+r",
+  //       "markOldestUnreadAndJumpNext" : "cmd+ctrl+u",
+  //       "editWorkspaceDescription" : "cmd+opt+e",
+  //       "quit" : "cmd+q",
+  //       "focusBrowserAddressBar" : "cmd+l",
+  //       "toggleReactGrab" : "cmd+shift+g",
+  //       "renameTab" : "cmd+r",
+  //       "splitBrowserRight" : "cmd+opt+d",
+  //       "reopenClosedBrowserPanel" : "cmd+shift+t",
+  //       "prevSidebarTab" : "cmd+ctrl+[",
+  //       "showNotifications" : "cmd+i",
+  //       "splitBrowserDown" : "cmd+shift+opt+d",
+  //       "toggleBrowserDeveloperTools" : "cmd+opt+i",
+  //       "browserZoomReset" : "cmd+0",
+  //       "focusRight" : "cmd+opt+→",
+  //       "find" : "cmd+f",
+  //       "closeWindow" : "cmd+ctrl+w",
+  //       "commandPaletteNext" : "ctrl+n",
+  //       "toggleSidebar" : "cmd+b",
+  //       "closeOtherTabsInPane" : "cmd+opt+t",
+  //       "openSettings" : "cmd+,",
+  //       "focusRightSidebar" : "cmd+shift+e",
+  //       "selectWorkspaceByNumber" : "cmd+1",
+  //       "showBrowserJavaScriptConsole" : "cmd+opt+c",
+  //       "reopenPreviousSession" : "cmd+shift+o",
+  //       "sendFeedback" : "",
+  //       "toggleTerminalCopyMode" : "cmd+shift+m",
+  //       "focusLeft" : "cmd+opt+←",
+  //       "goToWorkspace" : "cmd+p",
+  //       "newTab" : "cmd+n",
+  //       "openFolder" : "cmd+o",
+  //       "toggleFileExplorer" : "cmd+opt+b",
+  //       "openBrowser" : "cmd+shift+l",
+  //       "browserBack" : "cmd+[",
+  //       "commandPalette" : "cmd+shift+p",
+  //       "selectSurfaceByNumber" : "ctrl+1",
+  //       "toggleSplitZoom" : "cmd+shift+\r",
+  //       "focusTextBoxInput" : "cmd+shift+a",
+  //       "closeWorkspace" : "cmd+shift+w",
+  //       "splitRight" : "cmd+d",
+  //       "hideFind" : "cmd+shift+opt+f",
+  //       "prevSurface" : "cmd+shift+[",
+  //       "jumpToUnread" : "cmd+shift+u",
+  //       "nextSurface" : "cmd+shift+]",
+  //       "newWindow" : "cmd+shift+n",
+  //       "splitDown" : "cmd+shift+d"
+  //     }
+  //   }
+}
