@@ -595,7 +595,7 @@
       "name": "Storage - modifier, var, const, let",
       "scope": ["meta.var.expr storage.type", "storage.modifier"],
       "settings": {
-        "foreground": "#746b91"
+        "foreground": "#a89ccf"
       }
     },
     {
@@ -679,7 +679,7 @@
         "meta.import keyword.other"
       ],
       "settings": {
-        "foreground": "#6bb4aa"
+        "foreground": "#a89ccf"
       }
     },
     {
@@ -1338,7 +1338,7 @@
       "name": "Plain Punctuation",
       "scope": "punctuation.definition.list_item.markdown",
       "settings": {
-        "foreground": "#9a9ea1"
+        "foreground": "#d09292"
       }
     },
     {
@@ -1389,7 +1389,7 @@
       "name": "Markdown - Markup Raw Inline",
       "scope": "text.html.markdown markup.inline.raw.markdown",
       "settings": {
-        "foreground": "#a89ccf"
+        "foreground": "#9cad77"
       }
     },
     {
@@ -1407,7 +1407,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#79736d"
+        "foreground": "#78accf"
       }
     },
     {
@@ -1418,7 +1418,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#4f7791"
+        "foreground": "#78accf"
       }
     },
     {
@@ -1440,7 +1440,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#4f7791"
+        "foreground": "#78accf"
       }
     },
     {
@@ -1451,7 +1451,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#9a9ea1"
+        "foreground": "#78accf"
       }
     },
     {
@@ -1462,7 +1462,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#6d7274"
+        "foreground": "#78accf"
       }
     },
     {
@@ -1470,7 +1470,7 @@
       "scope": ["markup.italic", "markup.italic punctuation"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#babec1"
+        "foreground": "#78accf"
       }
     },
     {
@@ -1478,7 +1478,7 @@
       "scope": ["markup.bold", "markup.bold punctuation"],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#babec1"
+        "foreground": "#cc977b"
       }
     },
     {
@@ -1489,7 +1489,7 @@
       ],
       "settings": {
         "fontStyle": "bold italic",
-        "foreground": "#babec1"
+        "foreground": "#cc977b"
       }
     },
     {
@@ -1533,7 +1533,7 @@
         "variable.language.fenced.markdown"
       ],
       "settings": {
-        "foreground": "#79736d"
+        "foreground": "#9cad77"
       }
     },
     {
