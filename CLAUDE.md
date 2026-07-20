@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Kohra
 
-Personal dark colour theme. Single variant, not for marketplace distribution. Targets VS Code (primary), Cursor (parallel theme file in the same extension manifest — Cursor is a VS Code fork and reads the manifest natively), Zed (parallel port), Ghostty (terminal port), and Sublime Text (parallel port).
+Personal dark colour theme. Single variant, not for marketplace distribution. Targets VS Code (primary), Cursor (parallel theme file in the same extension manifest — Cursor is a VS Code fork and reads the manifest natively), Zed (parallel port), Ghostty (terminal port), Sublime Text (parallel port), and Superset (parallel port).
 
 Scaffolded from Tokyo Night by Enkia (MIT) — VS Code scope coverage and the extension manifest are inherited. The Sublime Text `.sublime-theme` (chrome — tabs, sidebar, status bar, popups) is scaffolded separately from ayu-mirage by Ike Ku (MIT) and uses ayu's PNG icon assets verbatim. All colour values have been replaced. See `NOTICE` for license texts.
 
@@ -51,7 +51,7 @@ themes/kohra-color-theme.json         VS Code theme (JSONC; trailing commas stri
 themes/kohra-cursor-color-theme.json  Cursor theme — parallel target, byte-identical to the VS Code file today; carved out so Cursor-specific surfaces (ghost text, inline AI diff, composer chrome) can diverge without touching the VS Code variant
 themes/kohra.zed-theme.json            Zed theme (v0.2.0 schema)
 themes/kohra-ghostty                   Ghostty terminal theme (flat key=value config; 16-colour ANSI palette + bg/fg/cursor/selection). Derived from the Zed terminal palette
-themes/kohra-superset.json             Apache Superset theme (strict JSON; `ui` block for surfaces/accents/5 chart colours + `terminal` block for 16-colour ANSI). Mono `primary`, cool-blue `#78accf` accent. Surfaces/text derived from the Zed palette; terminal lifted from kohra-ghostty
+themes/kohra.superset.json             Superset theme (JSON; `ui` chrome + `terminal` ANSI sections). UI tokens derived from the Zed port, terminal palette from the Ghostty port. Not chezmoi-managed — Superset stores imported themes inside its own app state (`~/.superset/app-state.json`), so it must be re-imported via Settings → Appearance → Import on each machine
 themes/kohra.sublime-color-scheme      Sublime Text colour scheme (relaxed JSON; // comments + trailing commas allowed). variables → globals (editor UI) → rules (scope-based syntax). Hexes mirror the VS Code / Zed palette
 themes/kohra.sublime-theme             Sublime Text UI theme (chrome — tabs, sidebar, status bar, popups). Scaffolded from ayu-mirage; references PNG icons under kohra-assets/. Texture paths resolve via the `Packages/Kohra/` install symlink
 themes/kohra-assets/                   PNG icon set used by kohra.sublime-theme (arrows, close glyph, dirty dot, folder, fold). Lifted verbatim from ayu (MIT, see NOTICE)
