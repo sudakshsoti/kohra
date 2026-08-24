@@ -12,11 +12,11 @@ Cool fog-grey monochrome surface with a small set of deliberate syntax colours. 
 
 ## Source of truth: Figma → JSON
 
-There are two Figma files and they do not agree. Check which one you are in before reading anything as authoritative.
+There are two Figma files and they cover different ground. Check which one you are in before reading anything as authoritative.
 
 - **`Kohra` palette board** — key `m3bq5i16KVFgk8BF9xiAMD`, board node `7:2195`. A documentation board, not a variable collection: one row per token, each showing the Kohra swatch beside the Flexoki Dark value it is measured against, with an OKLCH caption and a WCAG contrast badge against the editor background. **This is current** — reconciled against the shipped theme JSONs on 2026-08-24. It holds no Figma variables, so `get_variable_defs` returns nothing; read it with `get_metadata` and write it with `use_figma`.
-- **`Kohra — Color System Tokens`** — key `dtReQGh5lb7Q80BnnPabe0`. Holds four variable collections under a single "Dark" mode: `Tokyo Night` (89), `Flexoki Dark` (127), `Kohra` (89) and `color shades [oser]` (11). **The `Kohra` collection is stale.** Every value in it is the pre-drift warm palette — `neutral/bg-editor` is `#14110e`, `syntax/comment` is `#605749`. Do not export from it and do not treat it as the design source until it has been resynced.
-- **Which way truth flows, for now:** the theme JSONs are ahead of Figma. Where they disagree, the JSONs win. This inverts the original workflow and is a known debt — resyncing the variable collection would restore Figma as the source.
+- **`Kohra — Color System Tokens`** — key `dtReQGh5lb7Q80BnnPabe0`. Holds four variable collections under a single "Dark" mode: `Tokyo Night` (89), `Flexoki Dark` (127), `Kohra` (89) and `color shades [oser]` (11). **The `Kohra` collection is current** — 81 of its 89 variables were resynced from the shipped theme JSONs on 2026-08-24. The eight not resynced are `diag/error-bg`, `diag/hint` and the six `chart/*`; no shipped theme file uses them, so there was nothing to read a value from. They were left at their existing values, which are already on the cool hue family (`diag/hint` `#00a598`, the chart ramp at L ≈ 0.650 / C ≈ 0.110), not warm leftovers. Read the collection with `get_variable_defs`.
+- **Which way truth flows:** Figma is the design source again. Make colour decisions in the `Kohra` collection, then apply them to the theme JSONs. If the two ever disagree, that is drift — reconcile rather than picking a winner.
 - **Workflow:** colour decisions are made in OKLCH. Never change a hex value speculatively — only when explicitly told the new value, or when conforming a token to its bucket below.
 - **MCP access:** both files are reachable via the Figma MCP server (`mcp__claude_ai_Figma__use_figma` for writes, `get_metadata` / `get_variable_defs` for reads).
 
@@ -43,7 +43,9 @@ Values below are measured from the shipped theme JSONs, not from Figma.
 | term-normal | `term/{red,green,yellow,blue,magenta,cyan}` | 0.600 | 0.100 |
 | term-bright | `term/bright-{colour}` | 0.750 | 0.090 |
 
-There is no live chart bucket. `chart/*` exists only in the stale Figma collection; Superset's `chart1`–`chart5` reuse existing accent and syntax values rather than a ramp of their own.
+There is no live chart bucket. `chart/*` exists only in the Figma collection; Superset's `chart1`–`chart5` reuse existing accent and syntax values rather than a ramp of their own.
+
+`diag/error-bg` `#3f191a` sits at L 0.271 / C 0.060, above the `vcs-bg` plane it would otherwise join. That is deliberate — error is the only token allowed out of its bucket, so the error background reads hotter than the VCS tints. Do not conform it.
 
 When extending or rebalancing the palette, classify the new token first, then conform to its bucket's (L, C).
 
