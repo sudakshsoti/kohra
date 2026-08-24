@@ -10,10 +10,10 @@
 
     "variables": {
         // neutral ramp — achromatic, faint blue tint (OKLCH H≈240°, C≈0.007)
-        "bg_deepest": "#030506",
-        "bg_deep": "#06080a",
-        "bg_input": "#0a0d0f",
-        "bg_editor": "#0f1214",
+        "bg_deepest": "#020405",
+        "bg_deep": "#040608",
+        "bg_input": "#070a0c",
+        "bg_editor": "#0b0e10",
         "bg_chrome": "#181b1d",
         "bg_raised": "#212527",
         "line_muted": "#3f4245",
@@ -26,9 +26,9 @@
         "fg_bright": "#d3d8da",
 
         // syntax-muted — lowest-luminance tokens
-        "comment": "#4c5b65",
-        "comment_doc": "#5c6c77",
-        "operator": "#79736d",
+        "comment": "#54636d",
+        "comment_doc": "#64747f",
+        "operator": "#6e757a",
 
         // syntax-primary / accents
         "blue": "#78accf",

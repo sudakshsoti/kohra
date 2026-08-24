@@ -10,8 +10,8 @@ from pathlib import Path
 # ayu-mirage hex -> Kohra hex (lowercase, no '#', RGB or RGBA)
 M = {
     # --- Surfaces / chrome ---
-    "161921":   "030506",   # sidebar separator inner (texture tint) -> bg_deepest
-    "1f2430":   "06080a",   # sidebar separator outer, title bar separator -> bg_deep
+    "161921":   "020405",   # sidebar separator inner (texture tint) -> bg_deepest
+    "1f2430":   "040608",   # sidebar separator outer, title bar separator -> bg_deep
     "242936":   "181b1d",   # chrome bg: sidebar, title bar, inactive tab, status bar -> bg_chrome
     "282e3b":   "212527",   # raised: panels, command palette, popup, scroll track -> bg_raised
     "282e3b00": "21252700", # transparent raised overlay

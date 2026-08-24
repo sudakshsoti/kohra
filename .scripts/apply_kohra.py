@@ -5,14 +5,14 @@ from pathlib import Path
 # TN hex -> Kohra hex (both lowercase, 6 chars, no '#')
 M = {
     # --- Surfaces ---
-    "0d0f17": "030506",  # window borders -> bg-deepest
-    "0f0f14": "030506",  # input.border, chat.requestBorder -> bg-deepest
-    "101014": "06080a",  # many borders, peekView -> bg-deep
-    "111117": "06080a",  # foldBackground base -> bg-deep
-    "14141b": "0a0d0f",  # input.bg, dropdown -> bg-base
-    "13131a": "0a0d0f",  # list.hoverBackground -> bg-base
+    "0d0f17": "020405",  # window borders -> bg-deepest
+    "0f0f14": "020405",  # input.border, chat.requestBorder -> bg-deepest
+    "101014": "040608",  # many borders, peekView -> bg-deep
+    "111117": "040608",  # foldBackground base -> bg-deep
+    "14141b": "070a0c",  # input.bg, dropdown -> bg-base
+    "13131a": "070a0c",  # list.hoverBackground -> bg-base
     "16161e": "181b1d",  # sideBar, statusBar, terminal, panel -> bg-surface
-    "1a1b26": "0f1214",  # editor.background -> bg-editor
+    "1a1b26": "0b0e10",  # editor.background -> bg-editor
     "1b1e2e": "212527",  # menubar selBorder, scmGraph -> bg-elevated
     "1c1d29": "212527",  # list focus/inactive -> bg-elevated
     "1e202e": "212527",  # sideBar/list dropBg, menu selBg -> bg-elevated
@@ -47,9 +47,9 @@ M = {
     "42465d": "3f4245",  # panelTitle inactive, bracketMatch border -> fg-ghost
     "363b54": "3f4245",  # linenumber, indent guide, whitespace -> fg-ghost
     "414761": "3f4245",  # breakpoint disabled -> fg-ghost
-    "51597d": "4c5b65",  # codeLens, comment, separator -> syntax/comment
-    "4e5579": "5c6c77",  # blockquote, raw inline punct -> syntax/comment-doc
-    "5a638c": "5c6c77",  # comment doc -> syntax/comment-doc
+    "51597d": "54636d",  # codeLens, comment, separator -> syntax/comment
+    "4e5579": "64747f",  # blockquote, raw inline punct -> syntax/comment-doc
+    "5a638c": "64747f",  # comment doc -> syntax/comment-doc
 
     # --- Brand blues ---
     "3d59a1": "085b87",  # button bg, focus, find match -> brand/blue
@@ -108,7 +108,7 @@ M = {
     "425882": "0e2433",  # minimap modified -> vcs/modified-bg
 
     # --- Syntax-faint (operator/escape) ---
-    "89ddff": "79736d",  # punctuation, operator, escape, regex quantifier -> syntax/operator
+    "89ddff": "6e757a",  # punctuation, operator, escape, regex quantifier -> syntax/operator
 
     # --- Regex ---
     "b4f9f8": "519584",  # regex strings -> syntax/regex

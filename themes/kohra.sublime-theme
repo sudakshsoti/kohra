@@ -13,7 +13,7 @@
 			"!ui_native_titlebar",
 			"ui_separator"
 		],
-		"bg": "#06080a"
+		"bg": "#040608"
 	},
 	{
 		"class": "sidebar_container",
@@ -31,7 +31,7 @@
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.tint": "#06080a",
+		"layer0.tint": "#040608",
 		"layer1.texture": "Kohra/kohra-assets/separator-sidebar.png",
 		"layer1.inner_margin": [
 			0,
@@ -40,7 +40,7 @@
 			1
 		],
 		"layer1.opacity": 1,
-		"layer1.tint": "#030506"
+		"layer1.tint": "#020405"
 	},
 	{
 		"class": "sidebar_tree",
@@ -277,7 +277,7 @@
 			9,
 			9
 		],
-		"layer0.tint": "#06080a",
+		"layer0.tint": "#040608",
 		"layer0.opacity": 0,
 		"layer1.texture": "Kohra/kohra-assets/folder.png",
 		"layer1.tint": "#828689bf",
@@ -467,7 +467,7 @@
 		"attributes": [
 			"!highlighted"
 		],
-		"background_modifier": "blend(#06080a 0%)"
+		"background_modifier": "blend(#040608 0%)"
 	},
 	{
 		"class": "tabset_control",
@@ -504,9 +504,9 @@
 			0,
 			0
 		],
-		"layer0.tint": "#06080a",
+		"layer0.tint": "#040608",
 		"layer1.texture": "Kohra/kohra-assets/tabset-border.png",
-		"layer1.tint": "#030506",
+		"layer1.tint": "#020405",
 		"layer1.inner_margin": [
 			1,
 			1,
@@ -527,7 +527,7 @@
 			"!ui_separator"
 		],
 		"layer0.texture": "Kohra/kohra-assets/separator-bottom.png",
-		"layer0.tint": "#030506",
+		"layer0.tint": "#020405",
 		"layer0.inner_margin": [
 			0,
 			0,
@@ -563,7 +563,7 @@
 			9,
 			0
 		],
-		"layer2.tint": "#030506",
+		"layer2.tint": "#020405",
 		"layer2.opacity": 0,
 		"content_margin": [
 			16,
@@ -594,7 +594,7 @@
 			"ui_separator"
 		],
 		"layer1.opacity": 1,
-		"layer1.tint": "#06080a",
+		"layer1.tint": "#040608",
 		"layer2.opacity": 1
 	},
 	{
@@ -878,7 +878,7 @@
 			25
 		],
 		"layer1.opacity": 1,
-		"layer1.tint": "#030506",
+		"layer1.tint": "#020405",
 		"layer2.texture": "Kohra/kohra-assets/overlay-bg.png",
 		"layer2.inner_margin": [
 			15,
@@ -1001,7 +1001,7 @@
 	{
 		"class": "grid_layout_control",
 		"border_size": 0,
-		"border_color": "#030506"
+		"border_color": "#020405"
 	},
 	{
 		"class": "grid_layout_control",
@@ -1091,7 +1091,7 @@
 			15
 		],
 		"layer1.opacity": 1,
-		"layer1.tint": "#030506",
+		"layer1.tint": "#020405",
 		"layer1.draw_center": false,
 		"content_margin": [
 			10,
@@ -1539,9 +1539,9 @@
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.tint": "#06080a",
+		"layer0.tint": "#040608",
 		"layer1.texture": "Kohra/kohra-assets/separator-top.png",
-		"layer1.tint": "#030506",
+		"layer1.tint": "#020405",
 		"layer1.inner_margin": [
 			1,
 			2,
@@ -1576,7 +1576,7 @@
 		"layer0.tint": "#181b1d",
 		"layer0.opacity": 1,
 		"layer1.texture": "Kohra/kohra-assets/separator-top.png",
-		"layer1.tint": "#030506",
+		"layer1.tint": "#020405",
 		"layer1.inner_margin": [
 			1,
 			2,
@@ -1593,7 +1593,7 @@
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.tint": "#06080a",
+		"layer0.tint": "#040608",
 		"layer1.opacity": 1
 	},
 	{
@@ -1633,12 +1633,12 @@
 	},
 	{
 		"class": "dialog",
-		"layer0.tint": "#06080a",
+		"layer0.tint": "#040608",
 		"layer0.opacity": 1
 	},
 	{
 		"class": "progress_bar_control",
-		"layer0.tint": "#06080a",
+		"layer0.tint": "#040608",
 		"layer0.opacity": 1
 	},
 	{
@@ -1666,7 +1666,7 @@
 	},
 	{
 		"class": "scroll_bar_control",
-		"layer0.tint": "#06080a",
+		"layer0.tint": "#040608",
 		"layer0.opacity": 1,
 		"layer1.texture": "Kohra/kohra-assets/scrollbar-vertical-wide.png",
 		"layer1.tint": "#828689",
@@ -1748,12 +1748,12 @@
 	},
 	{
 		"class": "scroll_track_control",
-		"layer0.tint": "#06080a",
+		"layer0.tint": "#040608",
 		"layer0.opacity": 1
 	},
 	{
 		"class": "scroll_corner_control",
-		"layer0.tint": "#06080a",
+		"layer0.tint": "#040608",
 		"layer0.opacity": 1
 	},
 	{
@@ -1856,7 +1856,7 @@
 			10,
 			8
 		],
-		"layer1.tint": "#030506",
+		"layer1.tint": "#020405",
 		"content_margin": [
 			10,
 			7,
@@ -2300,7 +2300,7 @@
 	},
 	{
 		"class": "tool_tip_label_control",
-		"color": "#06080a",
+		"color": "#040608",
 		"font.size": 12
 	}
 ]

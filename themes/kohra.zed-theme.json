@@ -40,10 +40,10 @@
         "status_bar.background": "#181b1dff",
         "title_bar.background": "#181b1dff",
         "title_bar.inactive_background": "#181b1dff",
-        "toolbar.background": "#0f1214ff",
+        "toolbar.background": "#0b0e10ff",
         "tab_bar.background": "#181b1dff",
         "tab.inactive_background": "#181b1dff",
-        "tab.active_background": "#0f1214ff",
+        "tab.active_background": "#0b0e10ff",
         "search.match_background": "#085b8766",
         "search.active_match_background": "#c29e7066",
         "panel.background": "#181b1dff",
@@ -55,12 +55,12 @@
         "scrollbar.track.background": "#00000000",
         "scrollbar.track.border": "#181b1dff",
         "editor.foreground": "#babec1ff",
-        "editor.background": "#0f1214ff",
-        "editor.gutter.background": "#0f1214ff",
+        "editor.background": "#0b0e10ff",
+        "editor.gutter.background": "#0b0e10ff",
         "editor.subheader.background": "#181b1dff",
         "editor.active_line.background": "#181b1dbf",
         "editor.highlighted_line.background": "#181b1dff",
-        "editor.line_number": "#4c5b65",
+        "editor.line_number": "#54636d",
         "editor.active_line_number": "#babec1",
         "editor.hover_line_number": "#828689",
         "editor.invisible": "#5a5e60ff",
@@ -200,12 +200,12 @@
             "font_weight": null
           },
           "comment": {
-            "color": "#4c5b65ff",
+            "color": "#54636dff",
             "font_style": "italic",
             "font_weight": null
           },
           "comment.doc": {
-            "color": "#5c6c77ff",
+            "color": "#64747fff",
             "font_style": null,
             "font_weight": null
           },
@@ -280,7 +280,7 @@
             "font_weight": null
           },
           "operator": {
-            "color": "#79736dff",
+            "color": "#6e757aff",
             "font_style": null,
             "font_weight": null
           },
@@ -350,7 +350,7 @@
             "font_weight": null
           },
           "string.escape": {
-            "color": "#79736dff",
+            "color": "#6e757aff",
             "font_style": null,
             "font_weight": null
           },
