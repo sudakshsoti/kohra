@@ -45,10 +45,10 @@
     "highlightForeground": "#181b1d"
   },
   "terminal": {
-    "background": "#181b1d",
+    "background": "#141719",
     "foreground": "#babec1",
     "cursor": "#78accf",
-    "cursorAccent": "#181b1d",
+    "cursorAccent": "#141719",
     "selectionBackground": "#0a3149",
     "black": "#2b2e31",
     "red": "#b46768",
