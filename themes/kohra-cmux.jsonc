@@ -95,7 +95,7 @@
       "Purple" : "#a86893",
       "Brown" : "#a57635",
       "Orange" : "#ae7853",
-      "Charcoal" : "#4a4d50",
+      "Charcoal" : "#5b5e61",
       "Magenta" : "#d598c0",
       "Indigo" : "#646295",
       "Rose" : "#e19796"
@@ -105,9 +105,9 @@
   },
 
   "sidebarAppearance" : {
-    "tintColor" : "#181b1d",
+    "tintColor" : "#1c1f21",
     "lightModeTintColor" : null,
-    "darkModeTintColor" : "#181b1d",
+    "darkModeTintColor" : "#1c1f21",
     "tintOpacity" : 0.2,
     "matchTerminalBackground" : false
   },

@@ -1,0 +1,806 @@
+{
+ "Night · fixed": {
+  "raw": {
+   "--color-base-00": "#0f1214",
+   "--color-base-05": "#15181a",
+   "--color-base-10": "#1c1f21",
+   "--color-base-20": "#26292b",
+   "--color-base-25": "#393d3f",
+   "--color-base-30": "#45484b",
+   "--color-base-35": "#5b5e61",
+   "--color-base-40": "#797d7f",
+   "--color-base-50": "#929699",
+   "--color-base-60": "#aeb2b5",
+   "--color-base-70": "#bfc3c6",
+   "--color-base-100": "#d1d5d8",
+   "--mono-text-bright": "#e7eaec",
+   "--heading-cool": "#d8e7f2",
+   "--color-base-rgb": "174, 178, 181",
+   "--color-red": "#d09292",
+   "--color-orange": "#cc977b",
+   "--color-yellow": "#c29e70",
+   "--color-green": "#9cad77",
+   "--color-cyan": "#6bb4ab",
+   "--color-blue": "#78accf",
+   "--color-purple": "#a89ccf",
+   "--color-pink": "var(--color-red)",
+   "--color-red-rgb": "208, 146, 146",
+   "--color-orange-rgb": "204, 151, 123",
+   "--color-yellow-rgb": "194, 158, 112",
+   "--color-green-rgb": "156, 173, 119",
+   "--color-cyan-rgb": "107, 180, 171",
+   "--color-blue-rgb": "120, 172, 207",
+   "--color-purple-rgb": "168, 156, 207",
+   "--color-pink-rgb": "var(--color-red-rgb)",
+   "--accent-h": "204",
+   "--accent-s": "48%",
+   "--accent-l": "64%",
+   "--background-primary": "var(--color-base-00)",
+   "--background-primary-alt": "var(--color-base-10)",
+   "--background-secondary": "var(--color-base-10)",
+   "--background-secondary-alt": "var(--color-base-05)",
+   "--background-modifier-border": "var(--color-base-25)",
+   "--background-modifier-border-hover": "var(--color-base-30)",
+   "--background-modifier-border-focus": "var(--color-blue)",
+   "--background-modifier-hover": "var(--color-base-20)",
+   "--background-modifier-active-hover": "rgba(var(--color-blue-rgb), 0.26)",
+   "--background-modifier-active": "rgba(var(--color-blue-rgb), 0.20)",
+   "--background-modifier-error": "rgba(var(--color-red-rgb), 0.12)",
+   "--background-modifier-error-hover": "rgba(var(--color-red-rgb), 0.20)",
+   "--background-modifier-error-rgb": "var(--color-red-rgb)",
+   "--text-normal": "var(--color-base-100)",
+   "--text-muted": "var(--color-base-60)",
+   "--text-faint": "var(--color-base-40)",
+   "--text-accent": "var(--color-blue)",
+   "--text-accent-hover": "var(--color-blue-hover)",
+   "--text-on-accent": "var(--color-base-00)",
+   "--text-selection": "rgba(var(--color-blue-rgb), 0.24)",
+   "--text-highlight-bg": "rgba(var(--color-yellow-rgb), 0.40)",
+   "--caret-color": "var(--color-blue)",
+   "--text-error": "#e07878",
+   "--text-warning": "var(--color-orange)",
+   "--text-success": "var(--color-green)",
+   "--color-red-text": "var(--text-error)",
+   "--code-background": "var(--color-base-05)",
+   "--code-normal": "var(--text-normal)",
+   "--code-comment": "var(--color-base-50)",
+   "--code-keyword": "var(--color-purple)",
+   "--code-function": "var(--color-blue)",
+   "--code-property": "var(--color-blue)",
+   "--code-string": "var(--color-green)",
+   "--code-value": "var(--color-orange)",
+   "--code-tag": "var(--color-red)",
+   "--code-operator": "var(--color-base-70)",
+   "--code-punctuation": "var(--color-base-70)",
+   "--code-important": "var(--color-yellow)",
+   "--link-color": "var(--color-blue)",
+   "--link-color-hover": "var(--color-blue-hover)",
+   "--link-unresolved-color": "var(--color-red)",
+   "--link-external-color": "var(--color-cyan)",
+   "--link-external-color-hover": "var(--color-cyan-hover)",
+   "--hr-color": "var(--color-base-25)",
+   "--blockquote-border-color": "var(--color-base-30)",
+   "--checkbox-color": "var(--color-blue)",
+   "--checkbox-color-hover": "var(--color-blue-hover)",
+   "--checkbox-marker-color": "var(--color-base-00)",
+   "--list-marker-color": "var(--color-base-50)",
+   "--indentation-guide-color": "rgba(191, 195, 198, 0.10)",
+   "--indentation-guide-color-active": "rgba(191, 195, 198, 0.24)",
+   "--scrollbar-thumb-bg": "rgba(var(--color-base-rgb), 0.28)",
+   "--scrollbar-active-thumb-bg": "rgba(var(--color-base-rgb), 0.50)",
+   "--scrollbar-bg": "transparent",
+   "--titlebar-background": "var(--color-base-10)",
+   "--titlebar-background-focused": "var(--color-base-10)",
+   "--titlebar-text-color": "var(--text-muted)",
+   "--ribbon-background": "var(--color-base-10)",
+   "--tab-background-active": "var(--color-base-00)",
+   "--tab-text-color-focused-active": "var(--mono-text-bright)",
+   "--graph-line": "var(--color-base-25)",
+   "--graph-node": "var(--color-base-70)",
+   "--graph-node-focused": "var(--color-blue)",
+   "--graph-node-tag": "var(--color-base-50)",
+   "--graph-node-attachment": "var(--color-green)",
+   "--graph-node-unresolved": "rgba(var(--color-red-rgb), 0.45)",
+   "--canvas-background": "var(--color-base-05)",
+   "--canvas-dot-pattern": "var(--color-base-25)",
+   "--canvas-color-1": "var(--color-red-rgb)",
+   "--canvas-color-2": "var(--color-orange-rgb)",
+   "--canvas-color-3": "var(--color-yellow-rgb)",
+   "--canvas-color-4": "var(--color-green-rgb)",
+   "--canvas-color-5": "var(--color-cyan-rgb)",
+   "--canvas-color-6": "var(--color-purple-rgb)"
+  },
+  "helpers": {
+   "--color-blue-hover": "#97c2de",
+   "--color-cyan-hover": "#8bc9c1"
+  },
+  "src": "Night",
+  "changes": {
+   "--color-base-05": [
+    "Δ2",
+    "#14171a"
+   ],
+   "--color-base-10": [
+    "Δ2",
+    "#181b1d"
+   ],
+   "--color-base-20": [
+    "Δ2",
+    "#212527"
+   ],
+   "--color-base-25": [
+    "Δ15",
+    "#2b2e31"
+   ],
+   "--color-base-30": [
+    "Δ2",
+    "#3f4245"
+   ],
+   "--color-base-35": [
+    "Δ2",
+    "#4a4d50"
+   ],
+   "--color-base-40": [
+    "Δ2",
+    "#5a5e60"
+   ],
+   "--color-base-50": [
+    "Δ2",
+    "#6d7274"
+   ],
+   "--color-base-60": [
+    "Δ2",
+    "#828689"
+   ],
+   "--color-base-70": [
+    "Δ2",
+    "#9a9ea1"
+   ],
+   "--color-base-100": [
+    "Δ2",
+    "#babec1"
+   ],
+   "--mono-text-bright": [
+    "Δ2",
+    "#d3d8da"
+   ],
+   "--heading-cool": [
+    "Δ13",
+    "#bbcad4"
+   ],
+   "--color-base-rgb": [
+    "Δ2",
+    "130, 134, 137"
+   ],
+   "--color-cyan": [
+    "Δ4",
+    "#4c958c"
+   ],
+   "--color-cyan-rgb": [
+    "Δ4",
+    "76, 149, 140"
+   ],
+   "--background-primary-alt": [
+    "Δ2",
+    "#181b1d"
+   ],
+   "--background-secondary": [
+    "Δ2",
+    "#181b1d"
+   ],
+   "--background-secondary-alt": [
+    "Δ12",
+    "#0f1214"
+   ],
+   "--background-modifier-border": [
+    "Δ15",
+    "#2b2e31"
+   ],
+   "--background-modifier-border-hover": [
+    "Δ2",
+    "#3f4245"
+   ],
+   "--background-modifier-border-focus": [
+    "Δ9",
+    "#4a4d50"
+   ],
+   "--background-modifier-hover": [
+    "Δ2",
+    "#212527"
+   ],
+   "--background-modifier-active-hover": [
+    "Δ8",
+    "#1c242a"
+   ],
+   "--background-modifier-active": [
+    "Δ8",
+    "#1a2127"
+   ],
+   "--text-normal": [
+    "Δ2",
+    "#babec1"
+   ],
+   "--text-muted": [
+    "Δ2",
+    "#828689"
+   ],
+   "--text-faint": [
+    "Δ2",
+    "#5a5e60"
+   ],
+   "--text-error": [
+    "Δ7",
+    "#d36c6d"
+   ],
+   "--text-warning": [
+    "Δ6",
+    "#c29e70"
+   ],
+   "--color-red-text": [
+    "Δ7",
+    "#d36c6d"
+   ],
+   "--code-background": [
+    "Δ11",
+    "#181b1d"
+   ],
+   "--code-normal": [
+    "Δ2",
+    "#babec1"
+   ],
+   "--code-comment": [
+    "Δ11",
+    "#6f797e"
+   ],
+   "--code-operator": [
+    "Δ2",
+    "#9a9ea1"
+   ],
+   "--code-punctuation": [
+    "Δ2",
+    "#9a9ea1"
+   ],
+   "--link-external-color": [
+    "Δ4",
+    "#70b4a2"
+   ],
+   "--link-external-color-hover": [
+    "Δ4",
+    "#8ec9bb"
+   ],
+   "--hr-color": [
+    "Δ15",
+    "#2b2e31"
+   ],
+   "--blockquote-border-color": [
+    "Δ2",
+    "#3f4245"
+   ],
+   "--list-marker-color": [
+    "Δ2",
+    "#6d7274"
+   ],
+   "--indentation-guide-color": [
+    "Δ2",
+    "#1d2022"
+   ],
+   "--indentation-guide-color-active": [
+    "Δ2",
+    "#303436"
+   ],
+   "--scrollbar-thumb-bg": [
+    "Δ2",
+    "#2f3235"
+   ],
+   "--scrollbar-active-thumb-bg": [
+    "Δ2",
+    "#484c4e"
+   ],
+   "--titlebar-background": [
+    "Δ12",
+    "#0f1214"
+   ],
+   "--titlebar-background-focused": [
+    "Δ12",
+    "#0f1214"
+   ],
+   "--titlebar-text-color": [
+    "Δ2",
+    "#828689"
+   ],
+   "--ribbon-background": [
+    "Δ12",
+    "#0f1214"
+   ],
+   "--tab-text-color-focused-active": [
+    "Δ2",
+    "#d3d8da"
+   ],
+   "--graph-line": [
+    "Δ15",
+    "#2b2e31"
+   ],
+   "--graph-node": [
+    "Δ12",
+    "#babec1"
+   ],
+   "--graph-node-tag": [
+    "Δ12",
+    "#9a9ea1"
+   ],
+   "--canvas-background": [
+    "Δ11",
+    "#0c0f10"
+   ],
+   "--canvas-dot-pattern": [
+    "Δ15",
+    "#2b2e31"
+   ],
+   "--canvas-color-5": [
+    "Δ4",
+    "76, 149, 140"
+   ]
+  }
+ },
+ "Daybreak · fixed": {
+  "raw": {
+   "--color-base-00": "#f3f6f8",
+   "--color-base-05": "#edeff1",
+   "--color-base-10": "#e5e8eb",
+   "--color-base-20": "#d7dbde",
+   "--color-base-25": "#c5c9cd",
+   "--color-base-30": "#b8bdc1",
+   "--color-base-35": "#868a8e",
+   "--color-base-40": "#6b7175",
+   "--color-base-50": "#60666a",
+   "--color-base-60": "#545a5f",
+   "--color-base-70": "#444a4e",
+   "--color-base-100": "#31363a",
+   "--mono-text-bright": "#202427",
+   "--heading-cool": "#192834",
+   "--color-base-rgb": "84, 90, 95",
+   "--color-red": "#98524d",
+   "--color-orange": "#905a33",
+   "--color-yellow": "#7f6528",
+   "--color-green": "#59733c",
+   "--color-cyan": "#277676",
+   "--color-blue": "#386e99",
+   "--color-purple": "#6d5d9a",
+   "--color-pink": "var(--color-red)",
+   "--color-red-rgb": "152, 82, 77",
+   "--color-orange-rgb": "144, 90, 51",
+   "--color-yellow-rgb": "127, 101, 40",
+   "--color-green-rgb": "89, 115, 60",
+   "--color-cyan-rgb": "39, 118, 118",
+   "--color-blue-rgb": "56, 110, 153",
+   "--color-purple-rgb": "109, 93, 154",
+   "--color-pink-rgb": "var(--color-red-rgb)",
+   "--accent-h": "207",
+   "--accent-s": "46%",
+   "--accent-l": "41%",
+   "--background-primary": "var(--color-base-00)",
+   "--background-primary-alt": "var(--color-base-10)",
+   "--background-secondary": "var(--color-base-10)",
+   "--background-secondary-alt": "var(--color-base-05)",
+   "--background-modifier-border": "var(--color-base-25)",
+   "--background-modifier-border-hover": "var(--color-base-30)",
+   "--background-modifier-border-focus": "var(--color-blue)",
+   "--background-modifier-hover": "var(--color-base-20)",
+   "--background-modifier-active-hover": "rgba(var(--color-blue-rgb), 0.30)",
+   "--background-modifier-active": "rgba(var(--color-blue-rgb), 0.24)",
+   "--background-modifier-error": "rgba(var(--color-red-rgb), 0.12)",
+   "--background-modifier-error-hover": "rgba(var(--color-red-rgb), 0.20)",
+   "--background-modifier-error-rgb": "var(--color-red-rgb)",
+   "--text-normal": "var(--color-base-100)",
+   "--text-muted": "var(--color-base-60)",
+   "--text-faint": "var(--color-base-40)",
+   "--text-accent": "var(--color-blue)",
+   "--text-accent-hover": "var(--color-blue-hover)",
+   "--text-on-accent": "var(--color-base-00)",
+   "--text-selection": "rgba(var(--color-blue-rgb), 0.18)",
+   "--text-highlight-bg": "rgba(var(--color-yellow-rgb), 0.28)",
+   "--caret-color": "var(--color-blue)",
+   "--text-error": "#9a3e3c",
+   "--text-warning": "var(--color-orange)",
+   "--text-success": "var(--color-green)",
+   "--color-red-text": "var(--text-error)",
+   "--code-background": "var(--color-base-05)",
+   "--code-normal": "var(--text-normal)",
+   "--code-comment": "var(--color-base-50)",
+   "--code-keyword": "var(--color-purple)",
+   "--code-function": "var(--color-blue)",
+   "--code-property": "var(--color-blue)",
+   "--code-string": "var(--color-green)",
+   "--code-value": "var(--color-orange)",
+   "--code-tag": "var(--color-red)",
+   "--code-operator": "var(--color-base-70)",
+   "--code-punctuation": "var(--color-base-70)",
+   "--code-important": "var(--color-yellow)",
+   "--link-color": "var(--color-blue)",
+   "--link-color-hover": "var(--color-blue-hover)",
+   "--link-unresolved-color": "var(--color-red)",
+   "--link-external-color": "var(--color-cyan)",
+   "--link-external-color-hover": "var(--color-cyan-hover)",
+   "--hr-color": "var(--color-base-25)",
+   "--blockquote-border-color": "var(--color-base-30)",
+   "--checkbox-color": "var(--color-blue)",
+   "--checkbox-color-hover": "var(--color-blue-hover)",
+   "--checkbox-marker-color": "var(--color-base-00)",
+   "--list-marker-color": "var(--color-base-50)",
+   "--indentation-guide-color": "rgba(68, 74, 78, 0.10)",
+   "--indentation-guide-color-active": "rgba(68, 74, 78, 0.24)",
+   "--scrollbar-thumb-bg": "rgba(var(--color-base-rgb), 0.26)",
+   "--scrollbar-active-thumb-bg": "rgba(var(--color-base-rgb), 0.45)",
+   "--scrollbar-bg": "transparent",
+   "--titlebar-background": "var(--color-base-10)",
+   "--titlebar-background-focused": "var(--color-base-10)",
+   "--titlebar-text-color": "var(--text-muted)",
+   "--ribbon-background": "var(--color-base-10)",
+   "--tab-background-active": "var(--color-base-00)",
+   "--tab-text-color-focused-active": "var(--mono-text-bright)",
+   "--graph-line": "var(--color-base-25)",
+   "--graph-node": "var(--color-base-70)",
+   "--graph-node-focused": "var(--color-blue)",
+   "--graph-node-tag": "var(--color-base-50)",
+   "--graph-node-attachment": "var(--color-green)",
+   "--graph-node-unresolved": "rgba(var(--color-red-rgb), 0.45)",
+   "--canvas-background": "var(--color-base-05)",
+   "--canvas-dot-pattern": "var(--color-base-25)",
+   "--canvas-color-1": "var(--color-red-rgb)",
+   "--canvas-color-2": "var(--color-orange-rgb)",
+   "--canvas-color-3": "var(--color-yellow-rgb)",
+   "--canvas-color-4": "var(--color-green-rgb)",
+   "--canvas-color-5": "var(--color-cyan-rgb)",
+   "--canvas-color-6": "var(--color-purple-rgb)"
+  },
+  "helpers": {
+   "--color-blue-hover": "#255b85",
+   "--color-cyan-hover": "#096363"
+  },
+  "src": "Daybreak",
+  "changes": {
+   "--color-base-25": [
+    "Δ15",
+    "#caced2"
+   ],
+   "--color-base-35": [
+    "Δ2",
+    "#a0a5a9"
+   ],
+   "--color-base-40": [
+    "Δ2",
+    "#83888d"
+   ],
+   "--color-base-50": [
+    "Δ2",
+    "#6e7478"
+   ],
+   "--color-base-60": [
+    "Δ2",
+    "#555c60"
+   ],
+   "--mono-text-bright": [
+    "Δ2",
+    "#1f2427"
+   ],
+   "--heading-cool": [
+    "Δ13",
+    "#26323c"
+   ],
+   "--color-base-rgb": [
+    "Δ2",
+    "85, 92, 96"
+   ],
+   "--color-red": [
+    "Δ3",
+    "#a55d58"
+   ],
+   "--color-orange": [
+    "Δ3",
+    "#9d663e"
+   ],
+   "--color-yellow": [
+    "Δ3",
+    "#8b7035"
+   ],
+   "--color-green": [
+    "Δ3",
+    "#647f48"
+   ],
+   "--color-cyan": [
+    "Δ3",
+    "#358282"
+   ],
+   "--color-blue": [
+    "Δ3",
+    "#437aa6"
+   ],
+   "--color-purple": [
+    "Δ3",
+    "#7363a0"
+   ],
+   "--color-pink": [
+    "Δ3",
+    "#a55d58"
+   ],
+   "--color-red-rgb": [
+    "Δ3",
+    "165, 93, 88"
+   ],
+   "--color-orange-rgb": [
+    "Δ3",
+    "157, 102, 62"
+   ],
+   "--color-yellow-rgb": [
+    "Δ3",
+    "139, 112, 53"
+   ],
+   "--color-green-rgb": [
+    "Δ3",
+    "100, 127, 72"
+   ],
+   "--color-cyan-rgb": [
+    "Δ3",
+    "53, 130, 130"
+   ],
+   "--color-blue-rgb": [
+    "Δ3",
+    "67, 122, 166"
+   ],
+   "--color-purple-rgb": [
+    "Δ3",
+    "115, 99, 160"
+   ],
+   "--color-pink-rgb": [
+    "Δ3",
+    "165, 93, 88"
+   ],
+   "--accent-h": [
+    "Δ10",
+    "205"
+   ],
+   "--accent-s": [
+    "Δ10",
+    "43%"
+   ],
+   "--accent-l": [
+    "Δ10",
+    "46%"
+   ],
+   "--background-modifier-border": [
+    "Δ15",
+    "#caced2"
+   ],
+   "--background-modifier-border-focus": [
+    "Δ9",
+    "#a0a5a9"
+   ],
+   "--background-modifier-active-hover": [
+    "Δ8",
+    "#dae5ed"
+   ],
+   "--background-modifier-active": [
+    "Δ8",
+    "#dee7ee"
+   ],
+   "--background-modifier-error": [
+    "Δ3",
+    "#eae4e5"
+   ],
+   "--background-modifier-error-hover": [
+    "Δ3",
+    "#e3d7d8"
+   ],
+   "--background-modifier-error-rgb": [
+    "Δ3",
+    "165, 93, 88"
+   ],
+   "--text-muted": [
+    "Δ2",
+    "#6e7478"
+   ],
+   "--text-faint": [
+    "Δ2",
+    "#83888d"
+   ],
+   "--text-accent": [
+    "Δ3",
+    "#437aa6"
+   ],
+   "--text-accent-hover": [
+    "Δ3",
+    "#356a96"
+   ],
+   "--text-selection": [
+    "Δ3",
+    "#d3e0e9"
+   ],
+   "--text-highlight-bg": [
+    "Δ3",
+    "#d6d0c1"
+   ],
+   "--caret-color": [
+    "Δ3",
+    "#437aa6"
+   ],
+   "--text-error": [
+    "Δ7",
+    "#b0524f"
+   ],
+   "--text-warning": [
+    "Δ6",
+    "#9d663e"
+   ],
+   "--text-success": [
+    "Δ6",
+    "#5f7a42"
+   ],
+   "--color-red-text": [
+    "Δ7",
+    "#b0524f"
+   ],
+   "--code-comment": [
+    "Δ11",
+    "#7f888c"
+   ],
+   "--code-keyword": [
+    "Δ3",
+    "#7363a0"
+   ],
+   "--code-function": [
+    "Δ3",
+    "#437aa6"
+   ],
+   "--code-property": [
+    "Δ3",
+    "#437aa6"
+   ],
+   "--code-string": [
+    "Δ3",
+    "#647f48"
+   ],
+   "--code-value": [
+    "Δ3",
+    "#9d663e"
+   ],
+   "--code-tag": [
+    "Δ3",
+    "#a55d58"
+   ],
+   "--code-operator": [
+    "Δ12",
+    "#555c60"
+   ],
+   "--code-important": [
+    "Δ3",
+    "#8b7035"
+   ],
+   "--link-color": [
+    "Δ3",
+    "#437aa6"
+   ],
+   "--link-color-hover": [
+    "Δ3",
+    "#356a96"
+   ],
+   "--link-unresolved-color": [
+    "Δ3",
+    "#a55d58"
+   ],
+   "--link-external-color": [
+    "Δ4",
+    "#2f7d72"
+   ],
+   "--link-external-color-hover": [
+    "Δ4",
+    "#266459"
+   ],
+   "--hr-color": [
+    "Δ15",
+    "#caced2"
+   ],
+   "--checkbox-color": [
+    "Δ3",
+    "#437aa6"
+   ],
+   "--checkbox-color-hover": [
+    "Δ3",
+    "#356a96"
+   ],
+   "--list-marker-color": [
+    "Δ12",
+    "#83888d"
+   ],
+   "--scrollbar-thumb-bg": [
+    "Δ2",
+    "#caced0"
+   ],
+   "--scrollbar-active-thumb-bg": [
+    "Δ2",
+    "#acb1b4"
+   ],
+   "--titlebar-text-color": [
+    "Δ2",
+    "#6e7478"
+   ],
+   "--tab-text-color-focused-active": [
+    "Δ2",
+    "#1f2427"
+   ],
+   "--graph-line": [
+    "Δ15",
+    "#caced2"
+   ],
+   "--graph-node": [
+    "Δ12",
+    "#555c60"
+   ],
+   "--graph-node-focused": [
+    "Δ3",
+    "#437aa6"
+   ],
+   "--graph-node-tag": [
+    "Δ2",
+    "#6e7478"
+   ],
+   "--graph-node-attachment": [
+    "Δ3",
+    "#647f48"
+   ],
+   "--graph-node-unresolved": [
+    "Δ3",
+    "#d0b1b0"
+   ],
+   "--canvas-background": [
+    "Δ11",
+    "#eceef0"
+   ],
+   "--canvas-dot-pattern": [
+    "Δ15",
+    "#caced2"
+   ],
+   "--canvas-color-1": [
+    "Δ3",
+    "165, 93, 88"
+   ],
+   "--canvas-color-2": [
+    "Δ3",
+    "157, 102, 62"
+   ],
+   "--canvas-color-3": [
+    "Δ3",
+    "139, 112, 53"
+   ],
+   "--canvas-color-4": [
+    "Δ3",
+    "100, 127, 72"
+   ],
+   "--canvas-color-5": [
+    "Δ3",
+    "53, 130, 130"
+   ],
+   "--canvas-color-6": [
+    "Δ3",
+    "115, 99, 160"
+   ]
+  }
+ },
+ "deltas": {
+  "Δ1": "Semantic tokens alias primitives with var(); one semantic map for both modes. No colour change by itself.",
+  "Δ2": "Text tiers and ramp. Night: dark end widened, H locked 240, body Lc 80, muted Lc 60, faint 4.5:1. Daybreak: muted → base-60, faint 4.5:1, H locked 240.",
+  "Δ3": "Daybreak buckets at one lightness, L 0.52, chroma kept: syntax, links, status and callout titles clear 4.5:1.",
+  "Δ4": "Cyan at bucket lightness; external links alias cyan; the off-palette teal is retired.",
+  "Δ5": "Bold is neutral (mono-text-bright); weight carries emphasis, amber stays in code.",
+  "Δ6": "Warning is orange in both modes, matching the warning callout; success aliases green.",
+  "Δ7": "Error keeps its exemption: chroma above the buckets, off bucket lightness, Lc 60 waived; lifted only to clear 4.5:1 on its rest wash.",
+  "Δ8": "Active is stronger than hover; active-hover is visibly distinct.",
+  "Δ9": "Focus ring is --color-blue; clears 3:1 non-text contrast.",
+  "Δ10": "Accent HSL matches --color-blue, so buttons and links are one blue.",
+  "Δ11": "Drifted duplicates collapsed: canvas → base-05, code comment → base-50, code background → base-05.",
+  "Δ12": "One chrome map: titlebar and ribbon base-10, graph node base-70, tag base-50, operator = punctuation, list marker base-50.",
+  "Δ13": "Headings h1–h4 use --heading-cool, as the README says.",
+  "Δ14": "theme.css header comments corrected: source of truth, lock claims, Lc ranges. No visual change.",
+  "Δ15": "Borders reach the discernible threshold on panels (≥1.5:1 or Lc 15).",
+  "Δ16": "Inactive tab titles use text-muted (theme.css consumer rule)."
+ }
+}

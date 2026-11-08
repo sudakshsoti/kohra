@@ -4,7 +4,7 @@
     // Preferences → Select Color Scheme → Kohra.
     //
     // .sublime-color-scheme is JSON with // comments and trailing commas allowed.
-    // Colour decisions live in the Kohra Figma collection; hexes mirror the other ports.
+    // Colour decisions live in the Kohra Paper file; hexes mirror the other ports.
     "name": "Kohra",
     "author": "Sudaksh Soti",
 
@@ -14,16 +14,17 @@
         "bg_deep": "#040608",
         "bg_input": "#070a0c",
         "bg_editor": "#0b0e10",
-        "bg_chrome": "#181b1d",
-        "bg_raised": "#212527",
-        "line_muted": "#3f4245",
-        "fg_disabled": "#5a5e60",
-        "fg_subtle": "#6d7274",
-        "fg_muted": "#828689",
+        "bg_chrome": "#1c1f21",
+        "bg_raised": "#26292b",
+        "line_muted": "#45484b",
+        "fg_disabled": "#797d7f",
+        "fg_subtle": "#929699",
+        "fg_muted": "#aeb2b5",
         "fg_dim": "#9a9ea1",
-        "fg_ui": "#a1a5a9",
-        "fg": "#babec1",
-        "fg_bright": "#d3d8da",
+        "fg_ui": "#aeb2b5",
+        "fg": "#d1d5d8",
+        "fg_code": "#babec1",  // syntax-neutral (variables, markup emphasis); holds below body text
+        "fg_bright": "#e7eaec",
 
         // syntax-muted — lowest-luminance tokens
         "comment": "#54636d",
@@ -34,9 +35,7 @@
         "blue": "#78accf",
         "purple": "#a89ccf",
         "purple_dim": "#746b91",
-        "teal": "#4c958c",
-        "teal_bright": "#6bb4aa",
-        "green_teal": "#70b4a2",
+        "cyan": "#6bb4ab",
         "green": "#9cad77",
         "orange": "#cc977b",
         "gold": "#c29e70",
@@ -49,7 +48,7 @@
         "link": "#4f7791",
 
         // diagnostics
-        "error": "#d36c6d",
+        "error": "#e07878",
         "warning": "#bf801e",
         "info": "#2a99d4",
 
@@ -67,9 +66,9 @@
         "line_highlight": "var(bg_raised)",
         "invisibles": "var(line_muted)",
 
-        "selection": "#3f424566",
-        "selection_border": "#3f424500",
-        "inactive_selection": "#3f424530",
+        "selection": "#45484b66",
+        "selection_border": "#45484b00",
+        "inactive_selection": "#45484b30",
         "selection_foreground": "var(fg)",
 
         "gutter": "var(bg_editor)",
@@ -129,7 +128,7 @@
         {
             "name": "String — interpolation / embedded source",
             "scope": "punctuation.definition.template-expression, punctuation.section.embedded, punctuation.section.interpolation",
-            "foreground": "var(teal_bright)"
+            "foreground": "var(cyan)"
         },
         {
             "name": "Regular expression",
@@ -175,7 +174,7 @@
         {
             "name": "Keyword — import / export / module",
             "scope": "keyword.control.import, keyword.control.export, keyword.control.from, keyword.other.DML, keyword.other.import",
-            "foreground": "var(teal_bright)"
+            "foreground": "var(cyan)"
         },
         {
             "name": "Storage modifier",
@@ -205,12 +204,12 @@
         {
             "name": "Support / library function",
             "scope": "support.function",
-            "foreground": "var(teal)"
+            "foreground": "var(cyan)"
         },
         {
             "name": "Type, class, support",
             "scope": "entity.name.type, entity.name.class, support.type, support.class, entity.name.namespace, meta.import.qualifier",
-            "foreground": "var(teal)"
+            "foreground": "var(cyan)"
         },
         {
             "name": "Inherited class",
@@ -225,7 +224,7 @@
         {
             "name": "Variable",
             "scope": "variable, support.variable, variable.other.readwrite",
-            "foreground": "var(fg)"
+            "foreground": "var(fg_code)"
         },
         {
             "name": "Function parameter",
@@ -240,12 +239,12 @@
         {
             "name": "Object property",
             "scope": "variable.other.property, support.variable.property, variable.other.member",
-            "foreground": "var(teal_bright)"
+            "foreground": "var(cyan)"
         },
         {
             "name": "Object literal key",
             "scope": "meta.object-literal.key",
-            "foreground": "var(green_teal)"
+            "foreground": "var(cyan)"
         },
         {
             "name": "Mapping / dictionary key (JSON, YAML, TOML)",
@@ -280,7 +279,7 @@
         {
             "name": "CSS — tag selector",
             "scope": "entity.name.tag.css",
-            "foreground": "var(teal)"
+            "foreground": "var(cyan)"
         },
         {
             "name": "CSS — property name",
@@ -305,12 +304,12 @@
         {
             "name": "Preprocessor",
             "scope": "meta.preprocessor, keyword.control.preprocessor",
-            "foreground": "var(green_teal)"
+            "foreground": "var(cyan)"
         },
         {
             "name": "HTML character entity",
             "scope": "constant.character.entity",
-            "foreground": "var(teal)"
+            "foreground": "var(cyan)"
         },
         {
             "name": "Punctuation",
@@ -342,13 +341,13 @@
         {
             "name": "Markup — bold",
             "scope": "markup.bold",
-            "foreground": "var(fg)",
+            "foreground": "var(fg_code)",
             "font_style": "bold"
         },
         {
             "name": "Markup — italic",
             "scope": "markup.italic",
-            "foreground": "var(fg)",
+            "foreground": "var(fg_code)",
             "font_style": "italic"
         },
         {
@@ -360,7 +359,7 @@
         {
             "name": "Markup — link",
             "scope": "markup.underline.link, string.other.link, constant.other.reference.link",
-            "foreground": "var(green_teal)"
+            "foreground": "var(cyan)"
         },
         {
             "name": "Markup — raw / inline code",

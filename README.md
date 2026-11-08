@@ -18,7 +18,7 @@ For the long-form version — why OKLCH, the full bucket table, cross-editor par
 
 ## Implementations
 
-Five implementations track the same Figma source of truth.
+Six implementations track the same Paper source of truth.
 
 | Editor       | File                                                                          |
 | ------------ | ----------------------------------------------------------------------------- |
@@ -27,6 +27,7 @@ Five implementations track the same Figma source of truth.
 | Zed          | `themes/kohra.zed-theme.json`                                                 |
 | Ghostty      | `themes/kohra-ghostty`                                                        |
 | Sublime Text | `themes/kohra.sublime-color-scheme` + `themes/kohra.sublime-theme` (+ assets) |
+| cmux         | `themes/kohra-cmux.jsonc`                                                     |
 
 ## Install
 
@@ -37,6 +38,8 @@ Cursor: symlink the repo into `~/.cursor/extensions/`, reload the window, pick *
 Zed: symlink `themes/kohra.zed-theme.json` into `~/.config/zed/themes/`, then pick Kohra from the theme picker.
 
 Ghostty: symlink `themes/kohra-ghostty` into `~/.config/ghostty/themes/`, set `theme = kohra-ghostty` in your config, and reload.
+
+cmux: `cp themes/kohra-cmux.jsonc ~/.config/cmux/cmux.json`.
 
 Sublime Text: symlink the `themes/` folder as a package at `Packages/Kohra` (the chrome theme references its icon assets by relative path), then pick **Kohra** from both `UI: Select Color Scheme` and `UI: Select Theme`.
 
