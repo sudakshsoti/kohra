@@ -1,6 +1,6 @@
 # Kohra
 
-A personal cool fog-grey monochrome dark theme. Single variant, not packaged for distribution. The name is Hindi for fog, which is the surface.
+A personal dark theme: cool fog-grey surfaces with slightly warm text. Single variant, not packaged for distribution. The name is Hindi for fog, which is the surface.
 
 <p align="center">
   <img src="assets/kohra-zed.png" width="880" alt="The Kohra theme running in Zed: cool fog-grey editor chrome with sample/showcase.ts open. Comments recede into the surface; types, strings and numbers carry just enough muted blue, green and amber to separate without shouting." />
@@ -12,13 +12,13 @@ A personal cool fog-grey monochrome dark theme. Single variant, not packaged for
 
 Every token in Kohra belongs to a bucket. Inside each bucket, lightness and chroma are locked in OKLCH; only hue varies. Keywords don’t shout over types, strings don’t dominate functions, comments recede uniformly. Tokens of the same role read as siblings because they are siblings in perceptual coordinates. Diagnostics break the rule on purpose — they have to interrupt.
 
-The chromatic identity is cold and still — a winter morning under fog, not a stylistic substitution. No system accent.
+The chromatic identity is cold and still — a winter morning under fog, not a stylistic substitution. The one warm thing is the text: neutral text keeps the lightness of the grey ramp but sits at OKLCH H 75, C 0.012, like paper under fog. Comments and operators stay cool so they recede. No system accent.
 
 For the long-form version — why OKLCH, the full bucket table, cross-editor parity notes, and what would change in a second run — see the case study at [sudaksh.io/projects/kohra](https://www.sudaksh.io/projects/kohra). Full coordinate reference for every variable lives in [`CLAUDE.md`](./CLAUDE.md).
 
 ## Implementations
 
-Six implementations track the same Paper source of truth.
+Seven implementations track the same Paper source of truth.
 
 | Editor       | File                                                                          |
 | ------------ | ----------------------------------------------------------------------------- |
@@ -28,6 +28,7 @@ Six implementations track the same Paper source of truth.
 | Ghostty      | `themes/kohra-ghostty`                                                        |
 | Sublime Text | `themes/kohra.sublime-color-scheme` + `themes/kohra.sublime-theme` (+ assets) |
 | cmux         | `themes/kohra-cmux.jsonc`                                                     |
+| T3 Code      | `themes/kohra-t3code.json` (Night, plus Daybreak as the light variant)        |
 
 ## Install
 
@@ -38,6 +39,8 @@ Cursor: symlink the repo into `~/.cursor/extensions/`, reload the window, pick *
 Zed: symlink `themes/kohra.zed-theme.json` into `~/.config/zed/themes/`, then pick Kohra from the theme picker.
 
 Ghostty: symlink `themes/kohra-ghostty` into `~/.config/ghostty/themes/`, set `theme = kohra-ghostty` in your config, and reload.
+
+T3 Code: copy `themes/kohra-t3code.json` to `~/.t3/userdata/themes/kohra.json`, then pick **Kohra** in T3 Code's appearance settings.
 
 cmux: `cp themes/kohra-cmux.jsonc ~/.config/cmux/cmux.json`.
 

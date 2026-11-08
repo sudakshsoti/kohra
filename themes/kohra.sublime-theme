@@ -5,7 +5,7 @@
 			"!ui_native_titlebar"
 		],
 		"bg": "#1c1f21",
-		"fg": "#e7eaec"
+		"fg": "#eee9e1"
 	},
 	{
 		"class": "title_bar",
@@ -56,7 +56,7 @@
 	},
 	{
 		"class": "sidebar_heading",
-		"color": "#aeb2b5",
+		"color": "#b6b1a9",
 		"font.bold": true,
 		"font.size": 11
 	},
@@ -105,7 +105,7 @@
 	},
 	{
 		"class": "sidebar_label",
-		"fg": "#aeb2b5",
+		"fg": "#b6b1a9",
 		"font.size": 12
 	},
 	{
@@ -118,7 +118,7 @@
 				]
 			}
 		],
-		"fg": "#e7eaec"
+		"fg": "#eee9e1"
 	},
 	{
 		"class": "sidebar_label",
@@ -130,7 +130,7 @@
 				]
 			}
 		],
-		"fg": "#e7eaec"
+		"fg": "#eee9e1"
 	},
 	{
 		"class": "sidebar_label",
@@ -142,7 +142,7 @@
 				]
 			}
 		],
-		"fg": "#aeb2b5",
+		"fg": "#b6b1a9",
 		"font.bold": false
 	},
 	{
@@ -171,7 +171,7 @@
 				]
 			}
 		],
-		"fg": "#e7eaec"
+		"fg": "#eee9e1"
 	},
 	{
 		"class": "sidebar_label",
@@ -183,7 +183,7 @@
 				]
 			}
 		],
-		"fg": "#e7eaec"
+		"fg": "#eee9e1"
 	},
 	{
 		"class": "sidebar_label",
@@ -217,7 +217,7 @@
 				]
 			}
 		],
-		"fg": "#aeb2b580"
+		"fg": "#b6b1a980"
 	},
 	{
 		"class": "disclosure_button_control",
@@ -240,7 +240,7 @@
 			0,
 			0
 		],
-		"layer0.tint": "#aeb2b5"
+		"layer0.tint": "#b6b1a9"
 	},
 	{
 		"class": "close_button",
@@ -260,7 +260,7 @@
 			"dirty"
 		],
 		"layer0.texture": "Kohra/kohra-assets/dirty.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1
 	},
 	{
@@ -280,7 +280,7 @@
 		"layer0.tint": "#040608",
 		"layer0.opacity": 0,
 		"layer1.texture": "Kohra/kohra-assets/folder.png",
-		"layer1.tint": "#aeb2b5bf",
+		"layer1.tint": "#b6b1a9bf",
 		"layer1.opacity": 1,
 		"layer2.texture": "Kohra/kohra-assets/folder-open.png",
 		"layer2.tint": "#c29e70",
@@ -390,10 +390,10 @@
 			9
 		],
 		"layer0.texture": "Kohra/kohra-assets/folder.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"layer1.texture": "Kohra/kohra-assets/folder-symlink.png",
-		"layer1.tint": "#aeb2b5",
+		"layer1.tint": "#b6b1a9",
 		"layer1.opacity": 0.3
 	},
 	{
@@ -657,7 +657,7 @@
 	},
 	{
 		"class": "tab_label",
-		"fg": "#aeb2b5",
+		"fg": "#b6b1a9",
 		"font.italic": false,
 		"font.bold": false,
 		"font.size": 12
@@ -684,7 +684,7 @@
 				]
 			}
 		],
-		"fg": "#e7eaec"
+		"fg": "#eee9e1"
 	},
 	{
 		"class": "tab_label",
@@ -696,7 +696,7 @@
 				]
 			}
 		],
-		"fg": "#e7eaec"
+		"fg": "#eee9e1"
 	},
 	{
 		"class": "tab_label",
@@ -712,10 +712,10 @@
 			0
 		],
 		"layer0.texture": "Kohra/kohra-assets/close.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"layer1.texture": "Kohra/kohra-assets/dirty.png",
-		"layer1.tint": "#aeb2b5",
+		"layer1.tint": "#b6b1a9",
 		"layer1.opacity": 0
 	},
 	{
@@ -811,7 +811,7 @@
 			15
 		],
 		"layer0.texture": "Kohra/kohra-assets/arrow-left.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1
 	},
 	{
@@ -828,7 +828,7 @@
 			15
 		],
 		"layer0.texture": "Kohra/kohra-assets/arrow-right.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1
 	},
 	{
@@ -845,7 +845,7 @@
 			12
 		],
 		"layer0.texture": "Kohra/kohra-assets/overflow-menu.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"layer0.inner_margin": [
 			0,
@@ -970,9 +970,9 @@
 	},
 	{
 		"class": "quick_panel_label",
-		"fg": "#aeb2b5",
+		"fg": "#b6b1a9",
 		"match_fg": "#c29e70",
-		"selected_fg": "#e7eaec",
+		"selected_fg": "#eee9e1",
 		"selected_match_fg": "#c29e70"
 	},
 	{
@@ -982,17 +982,17 @@
 				"class": "overlay_control"
 			}
 		],
-		"fg": "#aeb2b5",
+		"fg": "#b6b1a9",
 		"match_fg": "#c29e70",
-		"selected_fg": "#e7eaec",
+		"selected_fg": "#eee9e1",
 		"selected_match_fg": "#c29e70"
 	},
 	{
 		"class": "quick_panel_path_label",
-		"fg": "#aeb2b5",
-		"match_fg": "#e7eaec",
-		"selected_fg": "#aeb2b5",
-		"selected_match_fg": "#e7eaec"
+		"fg": "#b6b1a9",
+		"match_fg": "#eee9e1",
+		"selected_fg": "#b6b1a9",
+		"selected_match_fg": "#eee9e1"
 	},
 	{
 		"class": "quick_panel_detail_label",
@@ -1015,7 +1015,7 @@
 		"settings": [
 			"always_show_minimap_viewport"
 		],
-		"viewport_color": "#aeb2b5",
+		"viewport_color": "#b6b1a9",
 		"viewport_opacity": 0.3
 	},
 	{
@@ -1023,7 +1023,7 @@
 		"settings": [
 			"!always_show_minimap_viewport"
 		],
-		"viewport_color": "#aeb2b5",
+		"viewport_color": "#b6b1a9",
 		"viewport_opacity": {
 			"target": 0,
 			"speed": 4,
@@ -1049,7 +1049,7 @@
 		"layer0.texture": "Kohra/kohra-assets/unfold.png",
 		"layer0.opacity": 1,
 		"layer0.inner_margin": 0,
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"content_margin": [
 			8,
 			6,
@@ -1202,7 +1202,7 @@
 		"font.size": "1rem",
 		"font.bold": true,
 		"font.italic": true,
-		"color": "#aeb2b5"
+		"color": "#b6b1a9"
 	},
 	{
 		"class": "kind_label",
@@ -1276,8 +1276,8 @@
 	{
 		"class": "kind_container kind_navigation",
 		"layer0.opacity": 1,
-		"layer1.tint": "#e7eaec",
-		"layer2.tint": "#e7eaec"
+		"layer1.tint": "#eee9e1",
+		"layer2.tint": "#eee9e1"
 	},
 	{
 		"class": "kind_label",
@@ -1286,7 +1286,7 @@
 				"class": "kind_container kind_navigation"
 			}
 		],
-		"color": "#e7eaec"
+		"color": "#eee9e1"
 	},
 	{
 		"class": "kind_container kind_snippet",
@@ -1321,8 +1321,8 @@
 	{
 		"class": "kind_container kind_variable",
 		"layer0.opacity": 1,
-		"layer1.tint": "#babec180",
-		"layer2.tint": "#babec180"
+		"layer1.tint": "#c2bdb580",
+		"layer2.tint": "#c2bdb580"
 	},
 	{
 		"class": "kind_label",
@@ -1331,7 +1331,7 @@
 				"class": "kind_container kind_variable"
 			}
 		],
-		"color": "#babec180"
+		"color": "#c2bdb580"
 	},
 	{
 		"class": "kind_container kind_color_redish",
@@ -1456,8 +1456,8 @@
 	{
 		"class": "kind_container kind_color_dark",
 		"layer0.opacity": 1,
-		"layer1.tint": "#aeb2b5",
-		"layer2.tint": "#aeb2b5"
+		"layer1.tint": "#b6b1a9",
+		"layer2.tint": "#b6b1a9"
 	},
 	{
 		"class": "kind_label",
@@ -1466,7 +1466,7 @@
 				"class": "kind_container kind_color_dark"
 			}
 		],
-		"color": "#aeb2b5"
+		"color": "#b6b1a9"
 	},
 	{
 		"class": "kind_container kind_color_light",
@@ -1518,7 +1518,7 @@
 		"class": "auto_complete_kind_name_label",
 		"font.size": "0.9rem",
 		"font.italic": true,
-		"border_color": "#aeb2b5"
+		"border_color": "#b6b1a9"
 	},
 	{
 		"class": "auto_complete_details",
@@ -1557,7 +1557,7 @@
 		"class": "panel_close_button",
 		"layer0.texture": "Kohra/kohra-assets/close.png",
 		"layer0.opacity": 1,
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"content_margin": [
 			0,
 			0
@@ -1599,7 +1599,7 @@
 	{
 		"class": "panel_button_control",
 		"layer0.texture": "Kohra/kohra-assets/switch-panel.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1
 	},
 	{
@@ -1625,7 +1625,7 @@
 	},
 	{
 		"class": "vcs_branch_icon",
-		"layer0.tint": "#aeb2b5"
+		"layer0.tint": "#b6b1a9"
 	},
 	{
 		"class": "vcs_changes_annotation",
@@ -1669,7 +1669,7 @@
 		"layer0.tint": "#040608",
 		"layer0.opacity": 1,
 		"layer1.texture": "Kohra/kohra-assets/scrollbar-vertical-wide.png",
-		"layer1.tint": "#aeb2b5",
+		"layer1.tint": "#b6b1a9",
 		"layer1.opacity": 0.1,
 		"layer1.inner_margin": [
 			0,
@@ -1759,7 +1759,7 @@
 	{
 		"class": "puck_control",
 		"layer0.texture": "Kohra/kohra-assets/scrollbar-vertical-wide.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 0.3,
 		"layer0.inner_margin": [
 			0,
@@ -1875,7 +1875,7 @@
 		"layer0.opacity": 0,
 		"layer1.texture": "Kohra/kohra-assets/input-prompt.png",
 		"layer1.opacity": 1,
-		"layer1.tint": "#aeb2b5",
+		"layer1.tint": "#b6b1a9",
 		"layer1.inner_margin": [
 			36,
 			26,
@@ -1941,7 +1941,7 @@
 			12
 		],
 		"layer0.texture": "Kohra/kohra-assets/overflow-menu.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1
 	},
 	{
@@ -1986,7 +1986,7 @@
 			0
 		],
 		"layer0.opacity": 0,
-		"layer2.tint": "#e7eaec",
+		"layer2.tint": "#eee9e1",
 		"layer2.opacity": {
 			"target": 0,
 			"speed": 10,
@@ -2000,7 +2000,7 @@
 	{
 		"class": "icon_regex",
 		"layer0.texture": "Kohra/kohra-assets/regex.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"content_margin": [
 			12,
@@ -2022,7 +2022,7 @@
 	{
 		"class": "icon_case",
 		"layer0.texture": "Kohra/kohra-assets/matchcase.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"content_margin": [
 			12,
@@ -2044,7 +2044,7 @@
 	{
 		"class": "icon_whole_word",
 		"layer0.texture": "Kohra/kohra-assets/word.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"content_margin": [
 			12,
@@ -2066,7 +2066,7 @@
 	{
 		"class": "icon_wrap",
 		"layer0.texture": "Kohra/kohra-assets/wrap.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"content_margin": [
 			12,
@@ -2088,7 +2088,7 @@
 	{
 		"class": "icon_in_selection",
 		"layer0.texture": "Kohra/kohra-assets/inselection.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"content_margin": [
 			12,
@@ -2110,7 +2110,7 @@
 	{
 		"class": "icon_highlight",
 		"layer0.texture": "Kohra/kohra-assets/highlight.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"content_margin": [
 			12,
@@ -2132,7 +2132,7 @@
 	{
 		"class": "icon_preserve_case",
 		"layer0.texture": "Kohra/kohra-assets/replace-preserve-case.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"content_margin": [
 			12,
@@ -2154,7 +2154,7 @@
 	{
 		"class": "icon_context",
 		"layer0.texture": "Kohra/kohra-assets/context.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"content_margin": [
 			12,
@@ -2176,7 +2176,7 @@
 	{
 		"class": "icon_use_buffer",
 		"layer0.texture": "Kohra/kohra-assets/buffer.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"content_margin": [
 			12,
@@ -2198,7 +2198,7 @@
 	{
 		"class": "icon_use_gitignore",
 		"layer0.texture": "Kohra/kohra-assets/gitignore.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"content_margin": [
 			12,
@@ -2220,7 +2220,7 @@
 	{
 		"class": "sidebar_button_control",
 		"layer0.texture": "Kohra/kohra-assets/sidebar.png",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.opacity": 1,
 		"content_margin": [
 			12,
@@ -2236,7 +2236,7 @@
 	},
 	{
 		"class": "label_control",
-		"color": "#aeb2b5",
+		"color": "#b6b1a9",
 		"shadow_color": [
 			0,
 			0,
@@ -2257,7 +2257,7 @@
 				"class": "status_bar"
 			}
 		],
-		"color": "#aeb2b5",
+		"color": "#b6b1a9",
 		"font.bold": false
 	},
 	{
@@ -2267,7 +2267,7 @@
 				"class": "button_control"
 			}
 		],
-		"color": "#aeb2b5"
+		"color": "#b6b1a9"
 	},
 	{
 		"class": "label_control",
@@ -2287,7 +2287,7 @@
 	},
 	{
 		"class": "tool_tip_control",
-		"layer0.tint": "#aeb2b5",
+		"layer0.tint": "#b6b1a9",
 		"layer0.inner_margin": [
 			0,
 			0
