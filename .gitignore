@@ -9,3 +9,6 @@ desktop.ini
 ehthumbs.db
 Thumbs.db
 .vscode
+
+# Claude Code session notes
+.claude/
