@@ -1,5 +1,5 @@
 {
-    // Kohra — cool fog-grey monochrome. Ported from the Kohra VS Code / Zed palette.
+    // Kohra — cool fog-grey surfaces, slightly warm text. Ported from the Kohra VS Code / Zed palette.
     // Drop into Packages/User/ (Preferences → Browse Packages…), then select via
     // Preferences → Select Color Scheme → Kohra.
     //
@@ -9,7 +9,7 @@
     "author": "Sudaksh Soti",
 
     "variables": {
-        // neutral ramp — achromatic, faint blue tint (OKLCH H≈240°, C≈0.007)
+        // neutral ramp — surfaces cool (OKLCH H 240, C 0.006); fg_* text warm (H 75, C 0.012), same lightness steps
         "bg_deepest": "#020405",
         "bg_deep": "#040608",
         "bg_input": "#070a0c",
@@ -17,14 +17,14 @@
         "bg_chrome": "#1c1f21",
         "bg_raised": "#26292b",
         "line_muted": "#45484b",
-        "fg_disabled": "#797d7f",
-        "fg_subtle": "#929699",
-        "fg_muted": "#aeb2b5",
-        "fg_dim": "#9a9ea1",
-        "fg_ui": "#aeb2b5",
-        "fg": "#d1d5d8",
-        "fg_code": "#babec1",  // syntax-neutral (variables, markup emphasis); holds below body text
-        "fg_bright": "#e7eaec",
+        "fg_disabled": "#817c75",
+        "fg_subtle": "#9a958e",
+        "fg_muted": "#b6b1a9",
+        "fg_dim": "#a29d95",
+        "fg_ui": "#b6b1a9",
+        "fg": "#d9d3cc",
+        "fg_code": "#c2bdb5",  // syntax-neutral (variables, markup emphasis); holds below body text
+        "fg_bright": "#eee9e1",
 
         // syntax-muted — lowest-luminance tokens
         "comment": "#54636d",

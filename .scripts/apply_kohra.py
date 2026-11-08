@@ -30,22 +30,22 @@ M = {
     "29355a": "0a3149",  # sash.hover, notebook focus -> brand/blue-dim
 
     # --- Text / chrome greys ---
-    "a9b1d6": "d1d5d8",  # editor fg, sidebar header, peek sel fg -> fg-normal
-    "acb0d0": "d1d5d8",  # badge fg, link active, term bright white -> fg-normal
-    "bbc2e0": "d1d5d8",  # validation fg -> fg-normal
-    "c0caf5": "babec1",  # cursor, variables, semantic -> fg-normal
-    "c0cefc": "d3d8da",  # markup.table -> fg-bright
-    "d9d4cd": "babec1",  # semantic parameter -> fg-normal
-    "9aa5ce": "9a9ea1",  # charts fg, html text, heading 5 -> fg-secondary
-    "9abdf5": "9a9ea1",  # block punctuation, list_item -> fg-secondary
-    "9699a8": "bfc3c6",  # textPreformat -> fg-secondary
+    "a9b1d6": "d9d3cc",  # editor fg, sidebar header, peek sel fg -> fg-normal
+    "acb0d0": "d9d3cc",  # badge fg, link active, term bright white -> fg-normal
+    "bbc2e0": "d9d3cc",  # validation fg -> fg-normal
+    "c0caf5": "c2bdb5",  # cursor, variables, semantic -> fg-normal
+    "c0cefc": "dcd6cf",  # markup.table -> fg-bright
+    "d9d4cd": "c2bdb5",  # semantic parameter -> fg-normal
+    "9aa5ce": "a29d95",  # charts fg, html text, heading 5 -> fg-secondary
+    "9abdf5": "a29d95",  # block punctuation, list_item -> fg-secondary
+    "9699a8": "c7c1ba",  # textPreformat -> fg-secondary
     "747ca1": "6d7274",  # heading 6 -> fg-subtle
-    "868bc4": "aeb2b5",  # scrollbar slider -> fg-muted
-    "7e83b2": "aeb2b5",  # badge bg -> fg-muted
-    "787c99": "aeb2b5",  # foreground, icon, sidebar -> fg-muted
-    "646e9c": "929699",  # ghostText, inlayHint, gitlens trailing -> fg-subtle
-    "545c7e": "797d7f",  # disabledForeground, focusBorder -> fg-dim
-    "515670": "797d7f",  # descriptionForeground, ignoredResource -> fg-dim
+    "868bc4": "b6b1a9",  # scrollbar slider -> fg-muted (translucent uses keep the cool grey #aeb2b5)
+    "7e83b2": "b6b1a9",  # badge bg -> fg-muted (translucent uses keep the cool grey #aeb2b5)
+    "787c99": "b6b1a9",  # foreground, icon, sidebar -> fg-muted
+    "646e9c": "9a958e",  # ghostText, inlayHint, gitlens trailing -> fg-subtle
+    "545c7e": "817c75",  # disabledForeground, focusBorder -> fg-dim (translucent uses keep the cool grey #797d7f)
+    "515670": "817c75",  # descriptionForeground, ignoredResource -> fg-dim
     "515c7e": "45484b",  # selection bg (tinted overlay) -> fg-ghost
     "3b3e52": "45484b",  # activityBar inactive, button secondary -> fg-ghost
     "42465d": "45484b",  # panelTitle inactive, bracketMatch border -> fg-ghost

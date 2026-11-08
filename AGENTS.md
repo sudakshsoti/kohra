@@ -8,7 +8,7 @@ Scaffolded from Tokyo Night by Enkia (MIT) — VS Code scope coverage and the ex
 
 ## Design intent
 
-Cool fog-grey monochrome surface with a small set of deliberate syntax colours. The neutral ramp is achromatic with a very slight blue tint (OKLCH H ≈ 240°, C ≈ 0.007) — no warmth. Evokes a winter morning under fog: still, cold, desaturated. Goal is "pleasant over long sessions," not philosophical coherence. No system accent. Comments are the lowest-luminance syntax token.
+Cool fog-grey surfaces, slightly warm neutral text, and a small set of deliberate syntax colours. Backgrounds, borders and translucent fills sit on a near-achromatic ramp with a faint blue tint (OKLCH H 240, C 0.006). Neutral text (body, bright, muted, subtle, faint, syntax variable and punctuation) holds the same lightness steps but turns warm (H 75, C 0.012): warm paper under cold fog. Evokes a winter morning under fog: still, cold, desaturated, with the text as the one warm thing in the room. Comments and operators stay cool so they sit back. Goal is "pleasant over long sessions," not philosophical coherence. No system accent. Comments are the lowest-luminance syntax token.
 
 ## Source of truth: Paper → JSON
 
@@ -28,9 +28,10 @@ Values below are measured from the shipped theme files.
 
 | Bucket | Tokens | L | C |
 |---|---|---|---|
-| neutral ramp | `neutral/bg-*`, `neutral/fg-*`, `term/black\|white\|bright-black\|bright-white` | per step, 0.103–0.935 (see below) | 0.006 @ H 240 |
+| neutral surfaces | `neutral/bg-*`, borders, translucent fills, `term/black\|bright-black` | per step, 0.103–0.480 (see below) | 0.006 @ H 240 |
+| neutral text | `neutral/fg-*`, `term/white\|bright-white`, opaque icon tints | per step, 0.588–0.936 (see below) | 0.012 @ H 75 |
 | syntax-muted | `syntax/comment`, `comment-doc`, `comment-em` | 0.491 / 0.550 / 0.611, even 0.060 steps | 0.025 @ H≈238° |
-| syntax-neutral | `syntax/variable`, `class` | 0.799 | 0.006, held below body text (0.871) so identifiers never outshine the 0.720 hues |
+| syntax-neutral | `syntax/variable`, `class`, punctuation | 0.800 (punctuation 0.698) | 0.012 @ H 75, on the neutral text hue; held below body text (0.870) so identifiers never outshine the 0.720 hues |
 | syntax-faint | `syntax/operator`, `escape` | 0.558 | 0.011 @ H≈239° |
 | syntax-primary, dim | `syntax/invalid`, `regex`, `tag-punct` | 0.620 | 0.075 |
 | syntax-primary, bright | all other `syntax/*`, including `type` (cyan `#6bb4ab`) | 0.720 | 0.075 |
@@ -43,7 +44,9 @@ Values below are measured from the shipped theme files.
 | term-normal | `term/{red,green,yellow,blue,magenta,cyan}` | 0.600 | 0.100 |
 | term-bright | `term/bright-{colour}` | 0.750 | 0.090 |
 
-Neutral ramp steps (chrome and body text): editor `#0b0e10` (0.161), panels `#1c1f21` (0.236), hover and raised `#26292b` (0.277), borders `#393d3f` (0.356), border hover and gutter `#45484b` (0.400), ANSI bright black `#5b5e61` (0.480), faint `#797d7f` (0.586), subtle (ghost text, inlay hints) `#929699` (0.670), muted chrome text `#aeb2b5` (0.762), body `#d1d5d8` (0.871), bright `#e7eaec` (0.935). The four planes below the editor (`#020405`, `#040608`, `#070a0c`) are unchanged.
+Neutral surface steps (cool, H 240): editor `#0b0e10` (0.161), panels `#1c1f21` (0.236), hover and raised `#26292b` (0.277), borders `#393d3f` (0.356), border hover and gutter `#45484b` (0.400), ANSI bright black `#5b5e61` (0.480). The planes below the editor (`#020405`, `#040608`, `#070a0c`) are unchanged.
+
+Neutral text steps (warm, H 75, C 0.012, since 2026-11-08): faint `#817c75` (0.588), subtle (ghost text, inlay hints) `#9a958e` (0.672), punctuation `#a29d95` (0.698), muted chrome text `#b6b1a9` (0.762), variable and class `#c2bdb5` (0.800), preformatted and chart text `#c7c1ba` (0.814), body `#d9d3cc` (0.870), bright `#eee9e1` (0.936). Each keeps the lightness of the cool grey it replaced, so every contrast ratio moved by less than 0.1. Translucent uses of the old greys (scrollbar thumbs, ruler marks, Zed's `hidden`/`ignored` backgrounds, button and annotation borders) stay cool because they act as surfaces.
 
 There is one cyan. The old teal `#70b4a2` (links, preproc, object keys) was merged into `#6bb4ab` on 2026-11-08 because the two sat 10° apart in the same tier. `#4c958c` survives only as the accent dim tier in UI tints (diff inserted, `charts.green`, bracket pair 4), not as a syntax colour.
 
@@ -61,7 +64,7 @@ When extending or rebalancing the palette, classify the new token first, then co
 
 Comments are deliberately the quietest tokens and are held to WCAG 2.2 large-text (3.0), not body text (4.5). Pushing `syntax/comment` to 4.5 would put it above `syntax/operator` in lightness and invert the theme's own hierarchy. Measured against `neutral/bg-editor` `#0b0e10`, the three lowest syntax ratios are `syntax/comment` 3.12, `syntax/comment-doc` 4.01 and `syntax/operator` 4.14. Nothing falls below 3.0. Keep it that way.
 
-Two chrome tokens sit under body-text contrast, both known: faint text `#797d7f` is 4.66:1 on the editor but 3.99:1 on panels, and ANSI bright black `#5b5e61` (shell autosuggestions) is 2.97:1 on the VS Code terminal and 2.76:1 on the Ghostty background `#141719`. Both were lifted on 2026-11-08 from roughly 2.6 and 2.0.
+Two chrome tokens sit under body-text contrast, both known: faint text `#817c75` is 4.68:1 on the editor but 4.00:1 on panels, and ANSI bright black `#5b5e61` (shell autosuggestions) is 2.97:1 on the VS Code terminal and 2.76:1 on the Ghostty background `#141719`. Both were lifted on 2026-11-08 from roughly 2.6 and 2.0.
 
 ## Repo layout
 
@@ -72,6 +75,7 @@ themes/kohra.zed-theme.json            Zed theme (v0.2.0 schema)
 themes/kohra-ghostty                   Ghostty terminal theme (flat key=value config; 16-colour ANSI palette + bg/fg/cursor/selection). Derived from the Zed terminal palette
 themes/kohra.sublime-color-scheme      Sublime Text colour scheme (relaxed JSON; // comments + trailing commas allowed). variables → globals (editor UI) → rules (scope-based syntax). Hexes mirror the VS Code / Zed palette
 themes/kohra.sublime-theme             Sublime Text UI theme (chrome — tabs, sidebar, status bar, popups). Scaffolded from ayu-mirage; references PNG icons under kohra-assets/. Texture paths resolve via the `Packages/Kohra/` install symlink
+themes/kohra-t3code.json               T3 Code theme (one file, Night as `colors`, Daybreak as `variants.light`). Install: `cp themes/kohra-t3code.json ~/.t3/userdata/themes/kohra.json`, then pick Kohra in T3 settings
 themes/kohra-cmux.jsonc                cmux port (JSONC). Keeps the full cmux template scaffold with only the colour-relevant keys active — app.appearance, workspaceColors, sidebarAppearance, browser.theme — and every other section left commented so it falls back to what is saved in cmux Settings. Colours mirror the Ghostty terminal palette. Install: `cp themes/kohra-cmux.jsonc ~/.config/cmux/cmux.json`
 themes/kohra-assets/                   PNG icon set used by kohra.sublime-theme (arrows, close glyph, dirty dot, folder, fold). Lifted verbatim from ayu (MIT, see NOTICE)
 assets/kohra-zed.png                   Screenshot of the Zed port, used by README.md
